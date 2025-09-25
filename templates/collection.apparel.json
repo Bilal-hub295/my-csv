@@ -1,0 +1,287 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": true,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 20,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_nNqjgi": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_3hAzWw": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/198467-White.webp",
+            "shape_class": "rounded-full",
+            "title": "Accessories",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/accessories-hats",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_nF4T3w": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/sharkkidslig_1100x_e5283131-cfe6-477c-a8ca-45e55f5c050e.webp",
+            "shape_class": "rounded-full",
+            "title": "Kid's",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/kids-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_qfJ7U3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/207432111_10157879192295248_8470491137378807817_n.jpg",
+            "shape_class": "rounded-full",
+            "title": "Men's",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/mens-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_GWPJJL": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_0790.jpg",
+            "shape_class": "rounded-full",
+            "title": "Women's",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/womens-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_kHrdxW": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_9555.jpg",
+            "shape_class": "rounded-full",
+            "title": "Outer Banks apparel",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/obx-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_WxYbXF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/9b115a9fab7bb6f39b90a5fa7647013770538da3b512359d693d427c8737bec0_78f26502-d115-4e27-ace9-2b9030f2a4d4.jpg",
+            "shape_class": "rounded-full",
+            "title": "KHK Exclusives",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/khk-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_tpKW4b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/life-is-good_9d99a0bc-c821-4ca4-8a6b-40010dd644b8.jpg",
+            "shape_class": "rounded-full",
+            "title": "Life Is Good",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/life-is-good",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_WrMqe3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Image.jpg",
+            "shape_class": "rounded-full",
+            "title": "Pimp Shrimp",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/pimp-shrimp",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_3hAzWw",
+        "text_block_nF4T3w",
+        "text_block_qfJ7U3",
+        "text_block_GWPJJL",
+        "text_block_kHrdxW",
+        "text_block_WxYbXF",
+        "text_block_tpKW4b",
+        "text_block_WrMqe3"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 4,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        },
+        "318dfb00-9a16-4851-9960-24b4263965d8": {
+          "type": "nav_links",
+          "settings": {
+            "collection_linklist": "kites"
+          }
+        }
+      },
+      "block_order": [
+        "filters",
+        "318dfb00-9a16-4851-9960-24b4263965d8"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "c0073cdc-fec7-468f-8d1f-47a2aae6e68a": {
+      "type": "section-richtext",
+      "blocks": {
+        "text_YCbzCV": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.longFormText | metafield_tag }}",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "text_YCbzCV"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "section_columns_nNqjgi",
+    "main",
+    "c0073cdc-fec7-468f-8d1f-47a2aae6e68a"
+  ]
+}

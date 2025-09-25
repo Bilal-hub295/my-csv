@@ -1,0 +1,231 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "show_title": true,
+        "show_content": true,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "2ff0f3d6-aad4-4e04-b1c3-623a7a99cdb0": {
+      "type": "section-hero",
+      "settings": {
+        "image": "shopify://shop_images/71g7u7WDDTL._AC_SX679.jpg",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 45,
+        "overlay_color": "#000000",
+        "text_align": "align--middle-center",
+        "text_color": "text--white"
+      }
+    },
+    "a31077e4-9a9b-451e-bf45-b9aec57e5cff": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "7d465cd0-0bac-49f7-a596-0fdd687639f7": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Gifts Under $25",
+        "collection": "gifts-under-25",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "0ec400d0-6c57-4a5c-b999-0fd9dc8234ec": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "62c7b35c-93ef-4e14-bdb7-0d402676d3d6": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Gifts under $50",
+        "collection": "gifts-under-50",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "4d1e8895-a898-4881-9345-a9e31ae3a626": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "7643db60-7184-46ab-bd2a-1ce907152e6d": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Gifts for animal lovers",
+        "collection": "gifts-for-animal-lovers",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "8a9c3dd6-ba51-4fc8-a9c5-360ad847b655": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "a2f2809d-f4ca-46fd-aecd-70afa1cc4674": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Gifts Under $100",
+        "collection": "gifts-under-100",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "b2fc576f-0d6a-41bb-8661-7eb6600e3288": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "f93098bd-0869-4f61-8312-77b8729af9f8": {
+      "type": "section-collection",
+      "settings": {
+        "title": "gifts for kids",
+        "collection": "top-gifts-for-kids-1",
+        "grid": 3,
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "2910fbf1-84ef-41ce-bf01-dbd188a304eb": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "cacd14ae-4b80-4ccf-b622-03bfc61ba53d": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Gifts For Him",
+        "collection": "gifts-for-him",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "193b5ec3-bb5e-42ad-9eb3-b52c8c8ed5e7": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "b3962a3a-ad5b-413d-b170-b64c7a52094a": {
+      "type": "section-collection",
+      "settings": {
+        "title": "gift for her",
+        "collection": "gifts-for-her",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "22d3d3e3-c309-415e-9063-cac228eba421": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "6642e197-e98a-4e4f-8865-61764051d6cd": {
+      "type": "section-collection",
+      "settings": {
+        "title": "GIFTs FOR the beach lover",
+        "collection": "gifts-for-the-beach-lover",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": true
+      }
+    },
+    "e0945dd7-fda1-4c8c-bf91-dd5475054c17": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "6ee3c2a5-6ad7-45df-ad10-ff32ee5c06f4": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Outer Banks Gifts",
+        "collection": "obx-gifts",
+        "rows": 1,
+        "bg": "palette--light bg--neutral",
+        "show_view_all": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2ff0f3d6-aad4-4e04-b1c3-623a7a99cdb0",
+    "a31077e4-9a9b-451e-bf45-b9aec57e5cff",
+    "7d465cd0-0bac-49f7-a596-0fdd687639f7",
+    "0ec400d0-6c57-4a5c-b999-0fd9dc8234ec",
+    "62c7b35c-93ef-4e14-bdb7-0d402676d3d6",
+    "4d1e8895-a898-4881-9345-a9e31ae3a626",
+    "7643db60-7184-46ab-bd2a-1ce907152e6d",
+    "8a9c3dd6-ba51-4fc8-a9c5-360ad847b655",
+    "a2f2809d-f4ca-46fd-aecd-70afa1cc4674",
+    "b2fc576f-0d6a-41bb-8661-7eb6600e3288",
+    "f93098bd-0869-4f61-8312-77b8729af9f8",
+    "2910fbf1-84ef-41ce-bf01-dbd188a304eb",
+    "cacd14ae-4b80-4ccf-b622-03bfc61ba53d",
+    "193b5ec3-bb5e-42ad-9eb3-b52c8c8ed5e7",
+    "b3962a3a-ad5b-413d-b170-b64c7a52094a",
+    "22d3d3e3-c309-415e-9063-cac228eba421",
+    "6642e197-e98a-4e4f-8865-61764051d6cd",
+    "e0945dd7-fda1-4c8c-bf91-dd5475054c17",
+    "6ee3c2a5-6ad7-45df-ad10-ff32ee5c06f4"
+  ]
+}

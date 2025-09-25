@@ -1,0 +1,271 @@
+<style>
+  @media screen and (min-width: 768px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+        position: relative; z-index: 10;
+      }
+      
+  }
+  {% if section.settings.overlay_image != blank %}
+    .customer-reviews-sec::before {content: ""; z-index: 2; position: absolute; inset: 0; background-image: url({{ section.settings.overlay_image | image_url }});  background-size: cover; background-position: center; opacity: {{ section.settings.overlay_opacity }}; z-index: 1; {% if section.settings.greyscale %} filter: grayscale(80%); {% endif %}}
+    {% endif %}
+    .customer-reviews-sec{position: relative; overflow: hidden;}
+    .customer-reviews-sec .heading-title .h2{max-width: 449px; margin: 0 auto 64px; text-align: center; position: relative;}
+    .customer-reviews-sec .swiper-wrapper{display: flex; flex-wrap: nowrap; gap: 0;}
+    .customer-reviews-sec .review-card{padding: 24px; border-radius: 16px; display: block;}
+    .customer-reviews-sec .review{padding: 8px; text-align: center; border-radius: 30px; color: rgba(var(--color-foreground), 1);}
+    .customer-reviews-sec .review-text{color: #00000099; padding: 10px 0; }
+    .customer-reviews-sec .author-box{display: flex; gap: 8px; align-items: center;}
+    .customer-reviews-sec .slider-arrows{display: flex; gap: 8px; justify-content: center; margin-top: 32px;}
+    .customer-reviews-sec rect{fill: #fff;}
+
+      @media screen and (max-width: 767px){
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top-mobile}}px;
+        padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+        z-index: 10; position: relative;
+    }
+    .customer-reviews-sec .heading-title .h2{margin-bottom: 36px;}
+    {% if section.settings.heading-overlay_image != blank %}
+       .customer-reviews-sec .heading-title .h2{padding-top: 99px;}
+    .customer-reviews-sec .heading-title .h2::before{content: url({{ section.settings.heading-overlay_image | image_url }}); z-index: 2; position: absolute; inset: 0; opacity: {{ section.settings.overlay_opacity }}; z-index: 1; }
+    {% endif %}
+    .customer-reviews-sec .slider-arrows{margin-top: 28px;}
+  }
+  {% if section.settings.heading-overlay_image != blank %}
+  @media screen and (max-width: 439px){
+  .customer-reviews-sec .heading-title .h2{padding-top: 60px;}
+  }
+  {% endif %}
+  @media screen and (max-width: 400px){
+        .section-{{ section.id }}-padding{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        }
+        .customer-reviews-sec .heading-title .h2::before{zoom: 83%;}
+  }
+</style>
+<section class="customer-reviews-sec color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="heading-title">
+      <h2 class="h2">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="swiper review-card-slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide review-card-slide">
+            {% if block.settings.review_link != blank %}
+              <a
+                href="{{ block.settings.review_link }}"
+                target="_blank"
+                class="review-card color-{{ block.settings.color_scheme-card }}"
+              >
+            {% else %}
+              <div class="review-card color-{{ block.settings.color_scheme-card }}">
+            {% endif %}
+
+            {% if block.settings.review_text != blank %}
+              <p class="review color-{{ block.settings.color_scheme-review }}">{{ block.settings.review_text }}</p>
+            {% endif %}
+            {% if block.settings.review_detail != blank %}
+              <p class="review-text">{{ block.settings.review_detail }}</p>
+            {% endif %}
+            <div class="author-box">
+              {% if block.settings.author_image != blank %}
+                <img
+                  src="{{ block.settings.author_image | image_url: width: 80 }}"
+                  width="48"
+                  height="48"
+                  alt="{{ block.settings.author_name }}"
+                  class="author-image"
+                >
+              {% endif %}
+              {% if block.settings.author_name != blank %}
+                <h4 class="author-name">{{ block.settings.author_name }}</h4>
+              {% endif %}
+            </div>
+
+            {% if block.settings.review_link != blank %}
+              </a>
+            {% else %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="slider-arrows">
+        <div class="review-button-prev arrows">{{- 'icon-leftarrow.svg' | inline_asset_content -}}</div>
+        <div class="review-button-next arrows">{{- 'icon-rightarrow.svg' | inline_asset_content -}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.review-card-slider', {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      loop: true,
+      navigation: {
+        nextEl: '.review-button-next',
+        prevEl: '.review-button-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+          centeredSlides: true,
+        },
+        600: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+        1024: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Customer Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 235,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    },
+    {
+      "type": "image_picker",
+      "id": "overlay_image",
+      "label": "Overlay image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.5
+    },
+    {
+      "type": "image_picker",
+      "id": "heading-overlay_image",
+      "label": "Heading Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "greyscale",
+      "label": "Enable Filter"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "color-scheme1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review Card",
+      "settings": [
+        {
+          "type": "url",
+          "id": "review_link",
+          "label": "Review Link"
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review"
+        },
+        {
+          "type": "textarea",
+          "id": "review_detail",
+          "label": "Review description"
+        },
+        {
+          "type": "image_picker",
+          "id": "author_image",
+          "label": "Author image"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Author name"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme-card",
+          "label": "Color scheme Card",
+          "default": "color-scheme1"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme-review",
+          "label": "Color scheme review",
+          "default": "color-scheme1"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Reviews",
+      "blocks": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "review"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

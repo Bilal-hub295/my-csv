@@ -1,0 +1,207 @@
+<style>
+
+      .feature-product-slider-section{text-align: center; position: relative;}
+      .feature-product-slider-section .heading-title .h2{max-width: 360px; margin: 0 auto -20px;}
+      .feature-product-slider-section .swiper-wrapper{display: flex; flex-wrap: nowrap;}
+      .feature-product-slider-section .featured-product-swiper{padding: 0 84px;}
+      .feature-product-slider-section .product-card-slider{opacity: 0;}
+      .feature-product-slider-section .product-card-slider.swiper-slide-active{opacity: 1;}
+      .feature-product-slider-section .product-card-slider img{width: 100%;}
+      .feature-product-slider-section .arrows{position: absolute; z-index: 2; top: 31.7%; left: 0;}
+      .feature-product-slider-section .product-swiper-button-prev{right: 0; left: auto;}
+       .feature-product-slider-section .product-meta-field .product-meta{display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 0 auto; max-width: 740px; margin-top: -10px;}
+       .feature-product-slider-section .product-meta-field .product-meta li{padding: 8px 32px; border-radius: 20px; letter-spacing: -0.1px}
+       .feature-product-slider-section .fe-product-description{ max-width: 514px; color: #00000099; margin: 67px auto 16px;}
+       @media screen and (min-width: 440px) {
+          .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+          }
+    }
+        @media screen and (max-width: 767px){
+          .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top-mobile}}px;
+          padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+        }
+  .feature-product-slider-section .product-swiper-button-next,.product-swiper-button-prev{top: 100%;}
+  .feature-product-slider-section .product-meta-field .product-meta{margin: 21px auto 0; max-width: 408px;}
+  .feature-product-slider-section .featured-product-swiper{padding: 0;}
+  .feature-product-slider-section .product-meta-field .product-meta li{padding: 10px 16px;}
+  .feature-product-slider-section .fe-product-description{margin: 21px auto 16px;}
+  .feature-product-slider-section .slider-arrows{display: flex; gap: 16px; justify-content: center; margin-top: 16px;}
+  .feature-product-slider-section .arrows{position: static;}
+  .feature-product-slider-section .arrows svg{height: 48px; width: 48px;}
+         }
+         @media screen and (max-width: 439px){
+        .feature-product-slider-section .product-meta-field .product-meta li{padding: 10px 12px; font-size: 17px;}
+        }
+  @media screen and (max-width: 400px){
+        .section-{{ section.id }}-padding{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        }
+  }
+</style>
+
+<section class="feature-product-slider-section color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="heading-title">
+      <h2 class="h2">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="swiper featured-product-swiper">
+      <div class="swiper-wrapper">
+        {% for product in section.settings.featured_products %}
+          <div class="swiper-slide product-card-slider">
+            <div class="product-slide">
+              {% if product.metafields.custom.featured_product_image %}
+                <img src="{{ product.metafields.custom.featured_product_image | img_url: 'master' }}" alt="{{ product.title }}">
+              {% endif %}
+              <div class="product-meta-field">
+                <ul class="product-meta">
+                  {% if product.metafields.theme.badge != blank %}
+                    <li class="h4 color-{{ section.settings.color_scheme-badge }}">
+                      {{ product.metafields.theme.badge }}
+                    </li>
+                  {% endif %}
+                  {% if product.metafields.custom.progressive_feel != blank %}
+                    <li class="h4 color-{{ section.settings.color_scheme-badge }}">
+                      {{ product.metafields.custom.progressive_feel }}
+                    </li>
+                  {% endif %}
+                  {% if product.metafields.custom.by_skill_level != blank %}
+                    <li class="h4 color-{{ section.settings.color_scheme-badge }}">
+                      {{ product.metafields.custom.by_skill_level }}
+                    </li>
+                  {% endif %}
+                  {% if product.metafields.custom.wingspan != blank %}
+                    <li class="h4 color-{{ section.settings.color_scheme-badge }}">
+                      {{ product.metafields.custom.wingspan }}
+                    </li>
+                  {% endif %}
+                  {% if product.metafields.custom.wind_conditions != blank %}
+                    <li class="h4 color-{{ section.settings.color_scheme-badge }}">
+                      {{ product.metafields.custom.wind_conditions }}
+                    </li>
+                  {% endif %}
+                </ul>
+              </div>
+              {% if product.metafields.custom.featured_product_description != blank %}
+                <p class="fe-product-description">{{ product.metafields.custom.featured_product_description | strip_html }}</p>
+              {% endif %}
+              <div class="btn-box">
+                <a href="{{ section.settings.button_url }}" class="btn button button-solid">
+                  {{- section.settings.button_text -}}
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="slider-arrows">
+        <div class="product-swiper-button-next arrows">{{- 'icon-leftarrow.svg' | inline_asset_content -}}</div>
+        <div class="product-swiper-button-prev arrows">{{- 'icon-rightarrow.svg' | inline_asset_content -}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.featured-product-swiper', {
+      autoHeight: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.product-swiper-button-next',
+        prevEl: '.product-swiper-button-prev',
+      },
+      loop: true,
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Featured Product Slider",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme-badge",
+      "label": "Color Scheme Badge",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Our Customers Say"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Explore All Kites"
+    },
+    {
+      "type": "text",
+      "id": "button_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "product_list",
+      "id": "featured_products",
+      "label": "Featured Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Product Slider"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": false,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-bottom",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "section_logos_dfDerU": {
+      "type": "section-logos",
+      "blocks": {
+        "logo_image_LMjeWE": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/pura-vida-logo.png",
+            "link": "shopify://collections/pura-vida",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_kfqEij": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/colors-for-good-logo.png",
+            "link": "shopify://collections/colors-for-good",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_6TDVEh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/fahlo-logo.png",
+            "link": "shopify://collections/fahlo",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_zPmqdb": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/4ocean-logo_d2daa88f-19d2-4561-8245-c5bd87779a1a.png",
+            "link": "shopify://collections/4-ocean",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        },
+        "logo_image_UR3znW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/salty-cali-logo_774c02cc-feb3-4768-a916-9329ef84780f.png",
+            "link": "shopify://collections/salty-cali",
+            "new_tab": true,
+            "width": 140,
+            "spacing": 50
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_LMjeWE",
+        "logo_image_kfqEij",
+        "logo_image_6TDVEh",
+        "logo_image_zPmqdb",
+        "logo_image_UR3znW"
+      ],
+      "settings": {
+        "title": "Popular Jewelry Brands",
+        "bg": "palette--light bg--neutral",
+        "enable_marquee": true,
+        "marquee_speed": 60,
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_knihTW": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_t3rP7j": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/4ocean-signature5-_1__small_a3017a5b-64f6-4a81-9147-b2d1b8f8d088_1.jpg",
+            "shape_class": "rounded-full",
+            "title": "Bracelets",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/bracelets",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_Ww7KJt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_3690_1800x1800_a7efbed9-d583-49ed-9e5b-b4572f3c1fc6.webp",
+            "shape_class": "rounded-full",
+            "title": "Necklaces",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/necklaces",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_Eg8FBM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/414c1de2c543b59a75cae0243735c84e9b05f5622d572b382b65180146a34699.jpg",
+            "shape_class": "rounded-full",
+            "title": "Earrings",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/earrings",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_QahFWH": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/37437_SILVV4_800x800_crop_center_550x_1_1c2409ee-b57e-48ba-90bb-c43de027863a.webp",
+            "shape_class": "rounded-full",
+            "title": "Rings",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/rings",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_4T4ppB": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/SC_March22-18_1800x1800_1100x_d2327667-2528-49de-a15a-6b8bb1a5dd56.webp",
+            "shape_class": "rounded-full",
+            "title": "Anklets",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/anklets",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_t3rP7j",
+        "text_block_Ww7KJt",
+        "text_block_Eg8FBM",
+        "text_block_QahFWH",
+        "text_block_4T4ppB"
+      ],
+      "settings": {
+        "title": "Shop by Type",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 5,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "section_logos_dfDerU",
+    "subcollections",
+    "section_columns_knihTW",
+    "main"
+  ]
+}

@@ -1,0 +1,861 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "two_column_banner_slider_TGVNDH": {
+      "type": "two-column-banner-slider",
+      "blocks": {
+        "avatar_jYHYKT": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_1.webp"
+          }
+        },
+        "avatar_Rbj6Qt": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_2.webp"
+          }
+        },
+        "avatar_QAYHi9": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_3.webp"
+          }
+        },
+        "avatar_Y6XCjE": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_4.webp"
+          }
+        },
+        "slide_gx6WQ4": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/skyscraper-3296908_1920_2.webp"
+          }
+        },
+        "slide_wGH7mz": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/Rectangle_62.png"
+          }
+        }
+      },
+      "block_order": [
+        "avatar_jYHYKT",
+        "avatar_Rbj6Qt",
+        "avatar_QAYHi9",
+        "avatar_Y6XCjE",
+        "slide_gx6WQ4",
+        "slide_wGH7mz"
+      ],
+      "name": "Two Column Banner Swiper",
+      "settings": {
+        "review_text": "5000+ Reviews",
+        "color_scheme": "scheme-1",
+        "stars": "shopify://shop_images/Stars.webp",
+        "heading": "Lorem Ipsum Dolor Sit Amet, Consectetur.",
+        "description": "Whether you’re a seasoned flyer or just starting out, we offer a wide range of kites designed for all skill levels.",
+        "stats_text": "<p><strong>100k+</strong> Kites Sold<br/> To Our Trusting Customers</p>",
+        "button_text": "Buy Kites Today!",
+        "button_link": ""
+      }
+    },
+    "icon_box_columns_xQzHex": {
+      "type": "icon-box-columns",
+      "blocks": {
+        "icon_box_XncR9m": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754.png",
+            "heading": "50 years of Experience"
+          }
+        },
+        "icon_box_E8Hd33": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754_1.png",
+            "heading": "Get Outdoors, Stay Amazed"
+          }
+        },
+        "icon_box_rNAAYa": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754_2.png",
+            "heading": "Built for Family Fun"
+          }
+        },
+        "icon_box_bTda8V": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754_3.png",
+            "heading": "Crafted for Quality"
+          }
+        },
+        "icon_box_hkjVzR": {
+          "type": "icon_box",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754_4.png",
+            "heading": "Something for Every Flyer"
+          }
+        },
+        "icon_box_4jKLGH": {
+          "type": "icon_box",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754_5.png",
+            "heading": "Value That Takes You Higher"
+          }
+        },
+        "icon_box_T63jY4": {
+          "type": "icon_box",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/Group_1000002754_6.png",
+            "heading": "Guaranteed to Fly"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_XncR9m",
+        "icon_box_E8Hd33",
+        "icon_box_rNAAYa",
+        "icon_box_bTda8V",
+        "icon_box_hkjVzR",
+        "icon_box_4jKLGH",
+        "icon_box_T63jY4"
+      ],
+      "name": "Icon Box Columns",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top-mobile": 50,
+        "padding_bottom-mobile": 50
+      }
+    },
+    "image_marquee_hbnEpn": {
+      "type": "image-marquee",
+      "blocks": {
+        "image_Eqm6T4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/life-is-good-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/life-is-good"
+          }
+        },
+        "image_76Vbx9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/yeti-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/yeti"
+          }
+        },
+        "image_9jYyk4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pimp-shrimp-logo-clothing-hats_1_1cbfc042-a7d9-436c-a0ae-bc2550288aff.webp",
+            "link": "https://store.kittyhawk.com/collections/pimp-shrimp"
+          }
+        },
+        "image_Y4DdeQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SALTY_TAILS_REG_MARK_LOGO_280x_2x_b0d9d85a-cbc2-4104-903c-260350570c7d.webp",
+            "link": "https://store.kittyhawk.com/collections/salty-tails"
+          }
+        },
+        "image_x8cKwK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/crazy-aarons-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/crazy-aarons-thinking-putty"
+          }
+        },
+        "image_TPXjWn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/premier-kites-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/premier"
+          }
+        },
+        "image_AcMUgU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/prism-kites-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/prism-kites"
+          }
+        },
+        "image_rL8dxV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hq-logo_c73294d3-3004-44ed-930c-cc4345d1c0d4.webp",
+            "link": "https://store.kittyhawk.com/collections/hq-kites"
+          }
+        },
+        "image_3Pxtrj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/windnsun-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/windnsun"
+          }
+        },
+        "image_9KrrUx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/in-the-breeze-logo.webp",
+            "link": "https://store.kittyhawk.com/collections/in-the-breeze"
+          }
+        }
+      },
+      "block_order": [
+        "image_Eqm6T4",
+        "image_76Vbx9",
+        "image_9jYyk4",
+        "image_Y4DdeQ",
+        "image_x8cKwK",
+        "image_TPXjWn",
+        "image_AcMUgU",
+        "image_rL8dxV",
+        "image_3Pxtrj",
+        "image_9KrrUx"
+      ],
+      "name": "Image Marquee",
+      "settings": {
+        "color_scheme": "scheme-4"
+      }
+    },
+    "two_column_text_qdGyXz": {
+      "type": "two-column-text",
+      "name": "Two Column Text",
+      "settings": {
+        "heading": "We Don’t Just Sell Kites. We Sell Lifelong Smiles.",
+        "description_color": "#000000",
+        "color_scheme": "scheme-3",
+        "description": "<p>At Kitty Hawk Kites, we believe in moments that lift your spirit — literally. Every product we offer is hand-picked for quality, tested for joy, and backed by real humans who love to fly.<br/><br/>Whether you're a grandparent, a hobbyist, or just a curious kid at heart, you're in the right place.</p>",
+        "button_label": "",
+        "button_link": "",
+        "padding_top": 160,
+        "padding_bottom": 94,
+        "heading-numbers": 650,
+        "para-numbers": 356,
+        "padding_top-mobile": 104,
+        "padding_bottom-mobile": 38
+      }
+    },
+    "kite_cards_blocks_FT7QPq": {
+      "type": "kite-cards-blocks",
+      "blocks": {
+        "kite_card_aWpMtF": {
+          "type": "kite_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1321315840.png",
+            "heading": "Every kite is guaranteed to fly",
+            "card_link": "#",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "show_reviews": false,
+            "show_reviews_box": false
+          }
+        },
+        "kite_card_nA8hxw": {
+          "type": "kite_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1321315841.png",
+            "heading": "Most Trusted Kite Sellers",
+            "card_link": "#",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "show_reviews": false,
+            "show_reviews_box": false
+          }
+        },
+        "kite_card_iD7pYj": {
+          "type": "kite_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1321315842.png",
+            "heading": "Trusted by kite-lovers since 1974",
+            "card_link": "#",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "show_reviews": false,
+            "show_reviews_box": true
+          }
+        },
+        "kite_card_8kfrrb": {
+          "type": "kite_card",
+          "settings": {
+            "card_image": "shopify://shop_images/Frame_1321315839.png",
+            "heading": "Fast, friendly service — online & in-store",
+            "card_link": "#",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "show_reviews": true,
+            "show_reviews_box": false
+          }
+        },
+        "avatar_3ijUzw": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_1.webp"
+          }
+        },
+        "avatar_iWNqhz": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_2.webp"
+          }
+        },
+        "avatar_pGyKqW": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_3.webp"
+          }
+        },
+        "avatar_m9NLtn": {
+          "type": "avatar",
+          "settings": {
+            "avatar": "shopify://shop_images/image_4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "kite_card_aWpMtF",
+        "kite_card_nA8hxw",
+        "kite_card_iD7pYj",
+        "kite_card_8kfrrb",
+        "avatar_3ijUzw",
+        "avatar_iWNqhz",
+        "avatar_pGyKqW",
+        "avatar_m9NLtn"
+      ],
+      "name": "Kite Cards blocks",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "stars": "shopify://shop_images/Stars.webp",
+        "review-color-scheme": "scheme-2",
+        "review_text": "5000+ Reviews",
+        "stats_text": "<p><strong>100k+</strong>Kites Sold<br/>To Our Trusting Customers</p>"
+      }
+    },
+    "multirow_phmEti": {
+      "type": "multirow",
+      "blocks": {
+        "row_daX6gU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_62.png",
+            "caption": "",
+            "heading": "Find Your Perfect Kite",
+            "text": "<p>At Kitty Hawk Kites, we believe in moments that lift your spirit — literally. Every product we offer is hand-picked for quality, tested for joy, and backed by real humans who love to fly.</p><p>Whether you're a grandparent, a hobbyist, or just a curious kid at heart, you're in the right place.</p>",
+            "button_label": "Buy Kites Today!",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "row_daX6gU"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "customize-two-column": true,
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-3",
+        "row_color_scheme": "scheme-3",
+        "padding_top": 138,
+        "padding_bottom": 160
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-selling-kites",
+        "products_to_show": 4,
+        "customize-feature-collection": true,
+        "title": "This Season’s Best Flyers",
+        "heading_size": "h2",
+        "description": "<p>Shop high-quality kites guaranteed to fly — built for fun, made to last.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-4",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 160,
+        "padding_bottom": 200
+      }
+    },
+    "real_people_reviews_DRghe7": {
+      "type": "real-people-reviews",
+      "blocks": {
+        "icon_box_8cE33P": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/local_activity_40dp_FILL0_wght200_GRAD0_opsz40_1.png",
+            "icon_text": "Happy Customers",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "icon_box_fBin6q": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/diversity_1_40dp_FILL0_wght200_GRAD0_opsz40_1.png",
+            "icon_text": "Happy Customers",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "icon_box_iCEY6H": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/handshake_40dp_FILL0_wght200_GRAD0_opsz40_1.png",
+            "icon_text": "Happy Customers",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "icon_box_xrDeiG": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify://shop_images/diversity_1_40dp_FILL0_wght200_GRAD0_opsz40_1_1.png",
+            "icon_text": "Happy Customers",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "video_slide_P4JiL6": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/IMG_6927.MOV",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/01.png",
+            "enable_video_looping": false,
+            "description": ""
+          }
+        },
+        "video_slide_DmWb8p": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/IMG_6927.MOV",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/02.png",
+            "enable_video_looping": false,
+            "description": ""
+          }
+        },
+        "video_slide_iAqNh8": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/IMG_6927.MOV",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/03.png",
+            "enable_video_looping": false,
+            "description": ""
+          }
+        },
+        "video_slide_WzRzM7": {
+          "type": "video_slide",
+          "settings": {
+            "video": "shopify://files/videos/IMG_6927.MOV",
+            "video_url": "",
+            "cover_image": "shopify://shop_images/image_1.png",
+            "enable_video_looping": false,
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_8cE33P",
+        "icon_box_fBin6q",
+        "icon_box_iCEY6H",
+        "icon_box_xrDeiG",
+        "video_slide_P4JiL6",
+        "video_slide_DmWb8p",
+        "video_slide_iAqNh8",
+        "video_slide_WzRzM7"
+      ],
+      "name": "Real People Reviews",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "Real People, Real Reviews",
+        "button_text": "LEARN MORE",
+        "product_url": "",
+        "padding_top": 78,
+        "padding_bottom": 102,
+        "padding_top-mobile": 62,
+        "padding_bottom-mobile": 116
+      }
+    },
+    "logos_hHdamQ": {
+      "type": "logos",
+      "blocks": {
+        "logos_box_Tifhec": {
+          "type": "logos-box",
+          "settings": {
+            "logo": "shopify://shop_images/khsc-icon_1e5c4197_1.png",
+            "logo_link": ""
+          }
+        },
+        "logos_box_GnR3Ex": {
+          "type": "logos-box",
+          "settings": {
+            "logo": "shopify://shop_images/lig-icon_13c9573e_1.png",
+            "logo_link": ""
+          }
+        },
+        "logos_box_XyihFV": {
+          "type": "logos-box",
+          "settings": {
+            "logo": "shopify://shop_images/ms-icon_b99270ec_1.png",
+            "logo_link": ""
+          }
+        },
+        "logos_box_NxgYJ8": {
+          "type": "logos-box",
+          "settings": {
+            "logo": "shopify://shop_images/wv-icon_7840e17c.png",
+            "logo_link": ""
+          }
+        },
+        "logos_box_hC7n9w": {
+          "type": "logos-box",
+          "settings": {
+            "logo": "shopify://shop_images/gw-icon_85f57476_780e4ba8-01b5-4180-ad1e-265fc8c05538.png",
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logos_box_Tifhec",
+        "logos_box_GnR3Ex",
+        "logos_box_XyihFV",
+        "logos_box_NxgYJ8",
+        "logos_box_hC7n9w"
+      ],
+      "name": "Logos",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "heading": "Partners:",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "collection_list_tCQXRD": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_fgbENp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "games"
+          }
+        },
+        "featured_collection_patLN6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "games-toys"
+          }
+        },
+        "featured_collection_YgQXKm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "apparel"
+          }
+        },
+        "featured_collection_EWnGD3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wind-art"
+          }
+        },
+        "featured_collection_dWFPtA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "delta-kites"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_fgbENp",
+        "featured_collection_patLN6",
+        "featured_collection_YgQXKm",
+        "featured_collection_EWnGD3",
+        "featured_collection_dWFPtA"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Favourite Categories",
+        "collection-grid-box": true,
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-3",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 160,
+        "padding_bottom": 80,
+        "padding_top-mobile": 120,
+        "padding_bottom-mobile": 46
+      }
+    },
+    "featured_product_slider_DrcmbL": {
+      "type": "featured-product-slider",
+      "name": "Featured Product Slider",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "color_scheme-badge": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c",
+        "heading": "Our Featured Product",
+        "padding_top": 80,
+        "padding_bottom": 160,
+        "padding_top-mobile": 40,
+        "padding_bottom-mobile": 88,
+        "button_text": "Explore All Kites",
+        "button_url": "#",
+        "featured_products": [
+          "dummy-product",
+          "prism-zenith-5-aurora"
+        ]
+      }
+    },
+    "customer_reviews_yiX7cB": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_WLUCb8": {
+          "type": "review",
+          "settings": {
+            "review_link": "#",
+            "review_text": "\"I fly every weekend now.\"",
+            "review_detail": "“After retiring, I wanted a hobby that got me outdoors. Kitty Hawk Kites helped me pick the right kite, and I’ve been flying ever since. Great quality and even better service.”",
+            "author_image": "shopify://shop_images/Frame_1000003293.png",
+            "author_name": "– Gary T., Oregon",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_tHBC9j": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"The best part of our beach trip!\"",
+            "review_detail": "“My husband and I bought a kite for our granddaughter — she couldn’t stop smiling! Easy to set up, and it flew perfectly even with low wind.”",
+            "author_image": "shopify://shop_images/Frame_1000003293_1.png",
+            "author_name": "– Linda M., Virginia",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_Rxc4cT": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"Three generations flying together.\"",
+            "review_detail": "“Bought a couple of kites for a family reunion. The kids loved it, the adults loved it — we’ll be talking about that day for years!”",
+            "author_image": "shopify://shop_images/Frame_1000003293_2.png",
+            "author_name": "– Susan R., South Carolina",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_P8WbgJ": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"I fly every weekend now.\"",
+            "review_detail": "“After retiring, I wanted a hobby that got me outdoors. Kitty Hawk Kites helped me pick the right kite, and I’ve been flying ever since. Great quality and even better service.”",
+            "author_image": "shopify://shop_images/Frame_1000003293.png",
+            "author_name": "– Gary T., Oregon",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_4VhEgJ": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"The best part of our beach trip!\"",
+            "review_detail": "“My husband and I bought a kite for our granddaughter — she couldn’t stop smiling! Easy to set up, and it flew perfectly even with low wind.”",
+            "author_image": "shopify://shop_images/Frame_1000003293_1.png",
+            "author_name": "– Linda M., Virginia",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_fyFyYe": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"Three generations flying together.\"",
+            "review_detail": "“Bought a couple of kites for a family reunion. The kids loved it, the adults loved it — we’ll be talking about that day for years!”",
+            "author_image": "shopify://shop_images/Frame_1000003293_2.png",
+            "author_name": "– Susan R., South Carolina",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        }
+      },
+      "block_order": [
+        "review_WLUCb8",
+        "review_tHBC9j",
+        "review_Rxc4cT",
+        "review_P8WbgJ",
+        "review_4VhEgJ",
+        "review_fyFyYe"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "heading": "Hear From Our Customers",
+        "padding_top": 235,
+        "padding_bottom": 152,
+        "padding_top-mobile": 120,
+        "padding_bottom-mobile": 120,
+        "overlay_image": "shopify://shop_images/Rectangle_70.png",
+        "overlay_opacity": 1,
+        "greyscale": true,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "faq_WNUVp3": {
+      "type": "faq",
+      "blocks": {
+        "accordion_yfCrpi": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do your kites really fly?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_JfMFM6": {
+          "type": "accordion",
+          "settings": {
+            "title": "Are your kites good for kids or beginners?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_QcNciL": {
+          "type": "accordion",
+          "settings": {
+            "title": "What kind of kite should I buy for my wind conditions?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_fx4LkJ": {
+          "type": "accordion",
+          "settings": {
+            "title": "Are your kites good for kids or beginners?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_A8AkHx": {
+          "type": "accordion",
+          "settings": {
+            "title": "What’s included with my kite?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_UHhAHB": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do I need to buy anything extra?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_JgBWpA": {
+          "type": "accordion",
+          "settings": {
+            "title": "What’s your return policy?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_KpKDnM": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_jKFzUe": {
+          "type": "accordion",
+          "settings": {
+            "title": "What if my kite breaks or doesn’t work right?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_t3TQHh": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can I visit your stores or fly with you in person?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_yfCrpi",
+        "accordion_JfMFM6",
+        "accordion_QcNciL",
+        "accordion_fx4LkJ",
+        "accordion_A8AkHx",
+        "accordion_UHhAHB",
+        "accordion_JgBWpA",
+        "accordion_KpKDnM",
+        "accordion_jKFzUe",
+        "accordion_t3TQHh"
+      ],
+      "name": "Faq",
+      "settings": {
+        "subheading": "Everything You Need to Know Before You Fly",
+        "heading": "Frequently Asked Questions",
+        "color_scheme": "scheme-3",
+        "color_scheme-noactive": "scheme-4",
+        "color_scheme-active": "scheme-3",
+        "text": "",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "padding_top-mobile": 120,
+        "padding_bottom-mobile": 120
+      }
+    }
+  },
+  "order": [
+    "two_column_banner_slider_TGVNDH",
+    "icon_box_columns_xQzHex",
+    "image_marquee_hbnEpn",
+    "two_column_text_qdGyXz",
+    "kite_cards_blocks_FT7QPq",
+    "multirow_phmEti",
+    "featured_collection",
+    "real_people_reviews_DRghe7",
+    "logos_hHdamQ",
+    "collection_list_tCQXRD",
+    "featured_product_slider_DrcmbL",
+    "customer_reviews_yiX7cB",
+    "faq_WNUVp3"
+  ]
+}

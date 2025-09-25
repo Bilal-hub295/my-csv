@@ -1,0 +1,470 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f86c0596-e0db-47f1-b71c-8f673295c551": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker_gqKKF8": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Single Line Kites | Stunt Kites | Power Kites",
+            "enable_line": false,
+            "text_size": 4
+          }
+        },
+        "heading_CXzMBN": {
+          "type": "heading",
+          "settings": {
+            "title": "Kite Flying Tips",
+            "text_size": 10
+          }
+        },
+        "text_zCW4DX": {
+          "type": "text",
+          "settings": {
+            "richtext": "<p>Selecting the kite that is best for you and how to fly it.</p>",
+            "text_size": 6
+          }
+        },
+        "button_Mtw3Mg": {
+          "type": "button",
+          "settings": {
+            "link_text_1": "",
+            "link_1": "https://store.kittyhawk.com/products/hypnotist-stunt-kite-110200?_pos=1&_sid=d4cf0416f&_ss=r&variant=44482436366505",
+            "button_size_1": "btn--long",
+            "button_style_1": "btn",
+            "button_color_1": "btn--white",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--long",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--white",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_gqKKF8",
+        "heading_CXzMBN",
+        "text_zCW4DX",
+        "button_Mtw3Mg"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/prism-kites-hypnotist-p2-flying-park_1800x1800_23c37ba2-c660-4cc7-b99a-a8e66dd8cbae.jpg",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 40,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_faq_z9QTeY": {
+      "type": "section-faq",
+      "blocks": {
+        "text_6Hq8wP": {
+          "type": "text",
+          "settings": {
+            "title": "Single Line Kites",
+            "content": "<p>This is the most basic kite and what almost everyone thinks of when they imagine flying a kite with a child. A single line attaches to the kite at a central point. Just run into the wind and the kite goes into the air.</p><p><a href=\"https://store.kittyhawk.com/collections/single-line-kites\">Single line kites</a> have four basic frame designs:</p><ol><li><a href=\"https://store.kittyhawk.com/collections/diamond-kites\" title=\"https://store.kittyhawk.com/collections/diamond-kites\">Diamond</a> - Often, the diamond shape is what most people think of when they hear the word, “kite.” Diamond kites are easy to assemble and their small size makes them great for younger kids to fly.</li><li><a href=\"https://store.kittyhawk.com/collections/delta-kites\" title=\"https://store.kittyhawk.com/collections/delta-kites\">Delta </a>- When asking for the best kite to fly, we almost always say a delta. Delta Kites are named for their triangular shape. Small and regular-sized delta kites are perfect for beginners.</li><li><a href=\"https://store.kittyhawk.com/collections/parafoil-kites\" title=\"Parafoil Kites\">Parafoil </a>- We love parafoil kites for their versatility. Parafoil kites are among the easiest to fly and since they are soft kites (“inflated” by the wind), there is no assembly required and no pieces to lose. Most parafoil kites come with line and a tail for stability.</li><li><a href=\"https://store.kittyhawk.com/collections/box-kites\" title=\"Box Kites\">Box </a>- With their out of the ordinary designs, box and cellular kites are the most eye-catching. Due to their structures, most of these kites need a bit more wind than some other kite frames, usually 8-20 mph. Even though these kites may look complicated, most are simple to assemble and fly</li></ol>"
+          }
+        },
+        "text_eTit6T": {
+          "type": "text",
+          "settings": {
+            "title": "Dual-Line Stunt Kites",
+            "content": "<p>This is a fun, fun kind of kite to fly. The flight of the kite is controlled by two lines. These allow the flyer to maneuver the kite up, down, and across the horizon. Fly it around in loops, figure 8s, or just about anything imaginable. They are a bit more difficult to fly than a traditional sing line kite, but we have many dual-line kites suitable for beginners</p><p>With this added level flair in kite flying, it can take some time to develop the skills to fly a <a href=\"https://store.kittyhawk.com/collections/dual-line-kites\">dual-line kite</a>. It generally takes about an hour or so to get comfortable controlling a stunt kite. The time is very well spent.</p><p>Most two-line stunt kites are delta-shaped. They actually look a bit like a miniature hang glider and are designed using the same technology as hang gliders, the Rogallo wing. There are also dual-line parafoils that generate tremendous lift and power.</p><ol><li><a href=\"https://store.kittyhawk.com/collections/dual-line-kites-1\" title=\"Dual Line Stunt Kites\">Framed Dual-Line Stunt Kites</a> - Dual-line framed stunt kites like these enable pilots to steer, maneuver, and perform tricks.</li><li><a href=\"https://store.kittyhawk.com/collections/foil-kites-1\" title=\"Foil Stunt Kites\">Foil Dual-Line Stunt Kites</a> - Dual-line foil kites create more pull and excitement and because they do not have a rigid frame. They also generally pack up into smaller cases, making them great for traveling. Pair these with a kite buggy and you can go for a wild ride!</li></ol>"
+          }
+        },
+        "text_DxCgBg": {
+          "type": "text",
+          "settings": {
+            "title": "Quad-Line Stunt Kites",
+            "content": "<p>When <a href=\"https://store.kittyhawk.com/collections/vendors?q=Revolution%20Kites\" title=\"Revolution Kites at Kitty Hawk Kites\">Revolution Kites</a> brought out their line of quad line kites back in the 1990s, it was, well . . . revolutionary. But here’s a historic footnote: look back at a photograph of the Wright Brothers flying their 1901 kite and they are controlling it with four attachment points. Nonetheless, <a href=\"https://store.kittyhawk.com/collections/quad-line-kites-1\" title=\"Quad-Line Kites\">quad line kites</a> really got people thinking about new stunts and new ways of doing things. Remarkable in their maneuverability, and surprisingly easy to master. They literally dance across the sky!</p><p>Revolution is still making their frame kites. New manufacturers have made their way onto the scene in recent years, such as <a href=\"https://store.kittyhawk.com/collections/hq-kites\">HQ Kites & Designs</a>. You can also take it to new levels and harness the power of the wind because kiteboarding kites use quad line controls.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_6Hq8wP",
+        "text_eTit6T",
+        "text_DxCgBg"
+      ],
+      "settings": {
+        "title": "The Beginners Guide to Kites",
+        "title_align": "text-left",
+        "title_size": 8,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_image_nXxkR4": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/right_kitefrontwidth_1024x1024_e232c2ec-9833-483f-9509-f5457730732c.webp",
+        "max_width": 100,
+        "x_align": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_HcCF6E": {
+      "type": "section-faq",
+      "blocks": {
+        "text_r4VEGg": {
+          "type": "text",
+          "settings": {
+            "title": "When & Where To Fly A Kite",
+            "content": "<p>Kites can be flown at any time of the year as long as the wind is right. It is recommended that you observe the wind range for your type of kite. Do not fly a kite on days when the wind is too strong for the type of kite you are flying. This will only damage the kite. Most kites should not be flown in more than 20 mph. Never fly in rain or lightning. Electricity in clouds is attracted to damp kite lines and you could get hurt.</p>"
+          }
+        },
+        "text_YCCkD3": {
+          "type": "text",
+          "settings": {
+            "title": "Finding An Open Space",
+            "content": "<p>Select an area that is clear of obstacles like houses, trees and power lines. Beaches and parks are usually good locations, but remember that kites can crash and be destroyed by the waves. Fly only where the kite will not create a hazard.</p>"
+          }
+        },
+        "text_q74VDx": {
+          "type": "text",
+          "settings": {
+            "title": "Stay Away From Power Lines",
+            "content": "<ol><li><strong>Never fly near power lines</strong></li><li>If your kite gets tangled in power line, drop the string to the ground and call your local power company for help</li><li>Do not try to get the kite down yourself</li><li>Some power lines carry extremely high voltages. Kite string or kites can become conductors of electricity if they are damp</li><li>You could be killed or seriously injured if your kite gets tangles on high voltage power line</li><li>Never fly a kite during an approaching storm or in rain, as a wet line will conduct electricity</li><li>Do not use wire as flying line</li><li>Always observe local air safety regulations. Avoid flying in air traffic patterns close to airports</li><li>Large kites can be dangerous and require extra care. Wear gloves when flying large kites</li><li>A large kite can drag you. Always use a release system</li><li>Do not let the line run through your fingers or hands at a fast rate- it will burn or cut you</li><li>Do not use blades or pointed objects on a kite or line</li><li>Do not throw heavy objects at an entrapped kite. Instead, try to let the kite fly itself free</li></ol>"
+          }
+        },
+        "text_yeH9MV": {
+          "type": "text",
+          "settings": {
+            "title": "Using the Beaufort Scale for Windpseed",
+            "content": "<p><strong>Leaves rustle Light</strong></p><ul><li>4-6 knots</li><li>4-7 mph</li></ul><p><strong>Small Flags fly Gentle</strong></p><ul><li>7-10 knots</li><li>8-12 mph</li></ul><p><strong>Dust Flies</strong></p><ul><li>11-16 knots</li><li>13-18 mph</li></ul><p><strong>Moderate</strong></p><ul><li>17-21 knots</li><li>19-24 mph</li></ul><p><strong>Trees sway-flying risky</strong></p><ul><li>22-27 knots </li><li>25-31 mph </li></ul><h6><strong>Trees bend-do not fly Strong</strong></h6>"
+          }
+        }
+      },
+      "block_order": [
+        "text_r4VEGg",
+        "text_YCCkD3",
+        "text_q74VDx",
+        "text_yeH9MV"
+      ],
+      "settings": {
+        "title": "Safety First",
+        "title_align": "text-left",
+        "title_size": 8,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_TUGKDr": {
+      "type": "section-faq",
+      "blocks": {
+        "text_QeXXEc": {
+          "type": "text",
+          "settings": {
+            "title": "The Basics",
+            "content": "<p>Stand with your back to the wind. Hold your kite up by the bridle point and let the line out. If there is sufficient wind, your kite will go right up. Let the kite fly away from you a little, then pull in on the line as the kite points up so it will climb. Repeat this until your kite gains the altitude necessary to find a good steady wind.</p>"
+          }
+        },
+        "text_YJptJz": {
+          "type": "text",
+          "settings": {
+            "title": "Single-Line Kites",
+            "content": "<ul><li><strong>Light Wind?</strong> Have a helper take the kite downwind and hold it up. On command, the helper releases the kite and the flier pulls the line hand-over-hand while the kite gains altitude. Practice this high-launch technique.</li><li><strong>No Helper?</strong> Prop the kite up against a bush, post, or wall. Reel out enough line for altitude and simply pull the kite aloft.</li><li>If the kite sinks tail first, there might not be enough wind. If it comes down head first or spins, there might be too much wind. Different kites fly in different winds.</li><li><strong>Bridles:</strong> If your kite has an adjustable bridle, move it higher (nearer the top) in higher winds, and lower (towards the tail) in lower winds. (Adjust no more than 1/2\" at a time.)</li><li><strong>Tails:</strong> Adding tails to your kite helps it remain stable in stronger winds. Use light-weight materials so you can use lots! Looks great!</li></ul>"
+          }
+        },
+        "text_x3nDan": {
+          "type": "text",
+          "settings": {
+            "title": "Stunt Kites",
+            "content": "<ul><li>Launching: Get the kite in an upright position. Gently tug on both lines so the nose is pointed towards the sky. Once you do this you give a sharp tug back and downward on both lines and take a few steps backward until the kite rises into the sky.</li><li>Controlling: To control the kite, pull on the right line to turn it to the right and the left line to turn it left. Holding one of the lines down and back will make the kite circle in the direction of the line you pulled. How hard you should pull can depend on the kite that you are flying and the conditions. </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_QeXXEc",
+        "text_YJptJz",
+        "text_x3nDan"
+      ],
+      "settings": {
+        "title": "How To Fly Your Kite",
+        "title_align": "text-left",
+        "title_size": 8,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_image_WrhdbH": {
+      "type": "section-image",
+      "settings": {
+        "image": "shopify://shop_images/Untitled-1-01-1200x294.png",
+        "max_width": 100,
+        "x_align": "center",
+        "color_bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f65ee79a-444f-4d4b-8a9a-9cae3eca8951": {
+      "type": "section-columns",
+      "blocks": {
+        "template--16164140712105__f65ee79a-444f-4d4b-8a9a-9cae3eca8951-1689106134dbc5e0cb-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/beginner-stunt-kites.jpg",
+            "shape_class": "",
+            "title": "Flying your new Stunt Kite",
+            "text": "<p>Watch a great video about flying your Stunt Kite</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": true,
+            "video_link": "https://www.youtube.com/watch?v=-LbnR_2wesM",
+            "video_button_color": "text--white"
+          }
+        },
+        "template--16164140712105__f65ee79a-444f-4d4b-8a9a-9cae3eca8951-1689106134dbc5e0cb-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Image6.webp",
+            "shape_class": "",
+            "title": "Tie a Larks Head Knot",
+            "text": "<p>Learn from the pros as Prism Kites on how to tie the most common knot and best knot used for your kite.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": true,
+            "video_link": "https://www.youtube.com/watch?v=cm50iRZBJQc",
+            "video_button_color": "text--white"
+          }
+        },
+        "template--16164140712105__f65ee79a-444f-4d4b-8a9a-9cae3eca8951-1689106134dbc5e0cb-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Purple_Stunt_Line.jpg",
+            "shape_class": "",
+            "title": "Unwinding Linesets",
+            "text": "<p>Learn how to unwind the line set for your stunt kite</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": true,
+            "video_link": "https://www.youtube.com/watch?v=veQ-XVLL3Pc",
+            "video_button_color": "text--white"
+          }
+        },
+        "6691b887-401d-4fe5-861a-cd430a107fa9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/prism_Stunt_Kite_Package.jpg",
+            "shape_class": "",
+            "title": "Winding Linesets",
+            "text": "<p>Learn how to best wind your stunt kites line set</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": true,
+            "video_link": "https://www.youtube.com/watch?v=H4726WgzDM0",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "template--16164140712105__f65ee79a-444f-4d4b-8a9a-9cae3eca8951-1689106134dbc5e0cb-0",
+        "template--16164140712105__f65ee79a-444f-4d4b-8a9a-9cae3eca8951-1689106134dbc5e0cb-1",
+        "template--16164140712105__f65ee79a-444f-4d4b-8a9a-9cae3eca8951-1689106134dbc5e0cb-2",
+        "6691b887-401d-4fe5-861a-cd430a107fa9"
+      ],
+      "settings": {
+        "title": "Helpful Stunt Kite How-To Videos",
+        "bg": "palette--light bg--accent",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1,
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_X9DJEz": {
+      "type": "section-faq",
+      "blocks": {
+        "text_9eabey": {
+          "type": "text",
+          "settings": {
+            "title": "Plan Ahead To Avoid Problems",
+            "content": "<ul><li>Use the correct flying line</li><li>Too heavy a line will weigh a kite down</li><li>Too light a line and your line might snap and you may lose your kite</li><li>Do not use mono-filament (fishing line). It is hard to see and can be dangerous</li><li>If flying lines cross, one will cut or nick the other</li></ul>"
+          }
+        },
+        "text_arfpcD": {
+          "type": "text",
+          "settings": {
+            "title": "If Your Kite Spins And The Wind Is Not Too Strong...",
+            "content": "<ul><li>Too short a tail can cause your kite to spin</li><li>Check to see if the struts are correctly fitted or that both sides of the kites are equal</li><li>On delta kites, make sure the leading edge struts are pushed all the way down into the wing tips.</li><li>Your tow point (where the line attaches) may be too forward...try moving the tow point toward the nose of the kite</li></ul>"
+          }
+        },
+        "text_x7y9F9": {
+          "type": "text",
+          "settings": {
+            "title": "If Your Kite Fails To Launch But The Wind Is Strong Enough To Support The Kite's Weight...",
+            "content": "<ul><li>Check to see if the tail is too heavy or long. Replace or remove part of the tail if necessary</li><li>A tow point is located back so a kite can be flown in light wind conditions or to stop the kite from spinning, too far back and the kite will refuse to fly...relocate the tow point forward</li></ul>"
+          }
+        },
+        "text_NMFbRq": {
+          "type": "text",
+          "settings": {
+            "title": "If Your Kite Pulls To One Side...",
+            "content": "<ul><li>A kite might pull to one side to release wind</li><li>Relocate the tow point forward</li><li>There may be wind conditions that cause the kite to pull to one side. Tape a piece of tail to the opposite side</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9eabey",
+        "text_arfpcD",
+        "text_x7y9F9",
+        "text_NMFbRq"
+      ],
+      "settings": {
+        "title": "Troubleshooting",
+        "title_align": "text-left",
+        "title_size": 8,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cf3d63ca-ddc3-4827-9879-a0abcd9cdf92": {
+      "type": "section-double",
+      "blocks": {
+        "template--16164140712105__cf3d63ca-ddc3-4827-9879-a0abcd9cdf92-1689106774d24463dc-0": {
+          "type": "text",
+          "settings": {
+            "kicker": "Kitty Hawk Kites",
+            "title": "More Than a Just a Hobby",
+            "text": "<p>Welcome to the Wonderful World Of Kite Flying!</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "Read More",
+            "button_url": "https://blog.kittyhawk.com/adventure/kite-flying/more-than-a-hobby/",
+            "button_color": "btn--primary",
+            "button_style": "caps--link",
+            "text_color": "text--neutral",
+            "bg_color": "#f8f0e7"
+          }
+        },
+        "template--16164140712105__cf3d63ca-ddc3-4827-9879-a0abcd9cdf92-1689106774d24463dc-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/75-tail-3-600x600__48530.jpg",
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn uppercase"
+          }
+        }
+      },
+      "block_order": [
+        "template--16164140712105__cf3d63ca-ddc3-4827-9879-a0abcd9cdf92-1689106774d24463dc-0",
+        "template--16164140712105__cf3d63ca-ddc3-4827-9879-a0abcd9cdf92-1689106774d24463dc-1"
+      ],
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "f86c0596-e0db-47f1-b71c-8f673295c551",
+    "section_faq_z9QTeY",
+    "section_image_nXxkR4",
+    "section_faq_HcCF6E",
+    "section_faq_TUGKDr",
+    "section_image_WrhdbH",
+    "f65ee79a-444f-4d4b-8a9a-9cae3eca8951",
+    "section_faq_X9DJEz",
+    "main",
+    "cf3d63ca-ddc3-4827-9879-a0abcd9cdf92"
+  ]
+}

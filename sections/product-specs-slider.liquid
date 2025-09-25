@@ -1,0 +1,312 @@
+<style>
+    .specs-and-feature-sec .spec-container{display: flex; gap: 109px;}
+    .specs-and-feature-sec .spec-row{display: flex; gap: 26px;}
+    .product-specs-swiper{position: relative;}
+    .product-specs-swiper .swiper-slide {overflow: hidden;}
+    .specs-and-feature-sec h2{max-width: 542px;}
+    .specs-and-feature-sec .spec-table{flex-grow: 1;}
+    .specs-and-feature-sec .spc-button{font-size: 32px; line-height: 24px; margin-bottom: 20px;}
+    .specs-and-feature-sec .slider-arrows{display: flex; gap: 8px;}
+    .specs-and-feature-sec .arrows{width: 64px; height: 64px;}
+    .specs-and-feature-sec .arrows svg{height: 100%; width: 100%;}
+    .specs-and-feature-sec .arrows svg rect{fill-opacity: 1; fill: rgb(var(--color-foreground));}
+    .specs-and-feature-sec .swiper-button-disabled svg rect{fill-opacity: 1; fill: rgb(var(--color-foreground), 0.3);}
+    .specs-and-feature-sec .swiper-button-disabled svg path{fill: rgb(var(--color-foreground));}
+    .specs-and-feature-sec .arrows-box{position: absolute; bottom: 0; z-index: 3;}
+    .specs-and-feature-sec .spc-button span{color: rgba(var(--color-foreground), 0.3);}
+    .specs-and-feature-sec .spec-feature,.specs-and-feature-sec .spec-detail{padding: 12px 10px; flex: 0 0 50%; border-bottom: 1px solid rgb(var(--color-foreground), 0.1)}
+  .specs-and-feature-sec .spc-heading{margin-bottom: 45px; padding: 12px 10px; flex: 0 0 50%; border-bottom: 1px solid rgb(var(--color-foreground)); background-color: rgb(var(--color-foreground),0.1);}
+  .specs-and-feature-sec .spec-table{color: {{ section.settings.table-color }};}
+  .specs-and-feature-sec .spec-detail{opacity: 0.5;}  
+  @media screen and (min-width: 767px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+     @media screen and (max-width: 767px){
+            .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top-mobile}}px;
+            padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+          }
+          .specs-and-feature-sec .spec-container{gap: 0;}
+          .spec-image{display: none;}
+          .specs-and-feature-sec .arrows-box{position: relative; margin-top: 28px; display: flex; justify-content: flex-end; align-items: center; flex-direction: row-reverse; gap: 15px;}
+          .specs-and-feature-sec .spc-button{font-size: 24px; margin-bottom: 0;}
+          .specs-and-feature-sec .arrows{height: 48px; width: 48px;}
+          .specs-and-feature-sec .spec-table .spec-feature{text-transform: uppercase;}
+          .specs-and-feature-sec .spec-row{gap: 0px;}
+        }
+</style>
+
+<div class="specs-and-feature-sec color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="product-specs-swiper swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide spec-slide">
+            <div class="spec-container">
+              <div class="spec-image">
+                {% if block.settings.spec_image %}
+                  <img
+                    src="{{ block.settings.spec_image | image_url: width: 263 }}"
+                    alt="Specs image"
+                    class="custom-image"
+                    width="263"
+                    height="263"
+                  >
+                {% endif %}
+              </div>
+              <div class="spec-table">
+                <h2 style="padding-bottom: {{ block.settings.heading-padding-bottom }}px; {% if block.settings.center_text %}text-align: center;{% endif %}">
+                  {{ block.settings.heading | default: 'Specs & Details' }}
+                </h2>
+                <div class="spec-row">
+                    <h4 class="spc-heading">Feature</h4>
+                    <h4 class="spc-heading">Detail</h4>
+                  </div>
+                <div class="spec-details">
+                  {% if block.settings.wing_span != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Wingspan</div>
+                      <div class="spec-detail">{{ block.settings.wing_span }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.wind_range != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Wind Range</div>
+                      <div class="spec-detail">{{ block.settings.wind_range }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.flying_line != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Flying Line</div>
+                      <div class="spec-detail">{{ block.settings.flying_line }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.fabric != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Fabric</div>
+                      <div class="spec-detail">{{ block.settings.fabric }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.frame != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Frame</div>
+                      <div class="spec-detail">{{ block.settings.frame }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.bag_size != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Bag Size</div>
+                      <div class="spec-detail">{{ block.settings.bag_size }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.skill_level != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Skill Level</div>
+                      <div class="spec-detail">{{ block.settings.skill_level }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.line_included != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Line Included</div>
+                      <div class="spec-detail">{{ block.settings.line_included }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="arrows-box">
+        <h4 class="spc-button">Next: <span>Comparison Table</span></h4>
+        <div class="slider-arrows">
+          <div class="spc-button-prev arrows">{{- 'icon-leftarrow.svg' | inline_asset_content -}}</div>
+          <div class="spc-button-next arrows">{{- 'icon-rightarrow.svg' | inline_asset_content -}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperEl = document.querySelector('.product-specs-swiper');
+    if (swiperEl && !swiperEl.classList.contains('swiper-initialized')) {
+      new Swiper(swiperEl, {
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: false,
+        navigation: {
+          nextEl: '.spc-button-next',
+          prevEl: '.spc-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Product Specs Slider",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "table-color",
+      "label": "Table Color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "spec_slide",
+      "name": "Spec Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Slide Heading",
+          "default": "Specs & Details"
+        },
+        {
+          "type": "image_picker",
+          "id": "spec_image",
+          "label": "Spec Image"
+        },
+        {
+          "type": "range",
+          "id": "heading-padding-bottom",
+          "min": 0,
+          "max": 70,
+          "step": 7,
+          "label": "Heading PB",
+          "default": 35
+        },
+        {
+          "type": "checkbox",
+          "id": "center_text",
+          "label": "Center Heading"
+        },
+        {
+          "type": "text",
+          "id": "wing_span",
+          "label": "Wingspan",
+          "default": "60 in. (152 cm)"
+        },
+        {
+          "type": "text",
+          "id": "wind_range",
+          "label": "Wind Range",
+          "default": "5–25 mph"
+        },
+        {
+          "type": "text",
+          "id": "flying_line",
+          "label": "Flying Line",
+          "default": "200 ft. of 50 lb. braided polyester"
+        },
+        {
+          "type": "text",
+          "id": "fabric",
+          "label": "Fabric",
+          "default": "Ripstop polyester"
+        },
+        {
+          "type": "text",
+          "id": "frame",
+          "label": "Frame",
+          "default": "Fiberglass"
+        },
+        {
+          "type": "text",
+          "id": "bag_size",
+          "label": "Bag Size",
+          "default": "24 × 5 × 2 in."
+        },
+        {
+          "type": "text",
+          "id": "skill_level",
+          "label": "Skill Level",
+          "default": "Beginner / Intermediate"
+        },
+        {
+          "type": "text",
+          "id": "line_included",
+          "label": "Line Included",
+          "default": "Yes"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison Specs Slider",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "spec_slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,667 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_breadcrumb_HMJMy9": {
+      "type": "product-breadcrumb",
+      "name": "Product Breadcrumb",
+      "settings": {
+        "back_label": "All Products",
+        "color_scheme": "scheme-2",
+        "padding_top": 42,
+        "padding_bottom": 42,
+        "padding_top-mobile": 16,
+        "padding_bottom-mobile": 30
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "rating_yFJpfz": {
+          "type": "rating",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "siblings_NkYT6R": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
+            "cutline": "{{ product.metafields.theme.cutline.value }}",
+            "option_size_sibling": 50,
+            "padding_bottom": 20
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "icon_with_text_UtRDbW": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "none",
+            "image_1": "shopify://shop_images/Frame_2.png",
+            "heading_1": "Half a Century of Expertise",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/Frame_3.png",
+            "heading_2": "Value That Takes You Higher",
+            "icon_3": "none",
+            "heading_3": ""
+          }
+        },
+        "collapsible_tab_QnGfEh": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description:",
+            "open-collaps": true,
+            "icon": "none",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_WjpjHQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Skill Level:",
+            "open-collaps": false,
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.by_skill_level.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_zMa6H9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wing Span:",
+            "open-collaps": false,
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.wingspan.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_GAteRW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wing Conditions:",
+            "open-collaps": false,
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.wind_conditions.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_dEXUjz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Recommended Flying Lines:",
+            "open-collaps": false,
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.recommended_flying_line.value }}</p>",
+            "page": ""
+          }
+        },
+        "complementary_fAzRx9": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Frequently bought together:",
+            "make_collapsible_row": false,
+            "icon": "box",
+            "product_list_limit": 10,
+            "products_per_page": 2,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "rating_yFJpfz",
+        "description",
+        "siblings_NkYT6R",
+        "quantity_selector",
+        "buy_buttons",
+        "variant_picker",
+        "icon_with_text_UtRDbW",
+        "collapsible_tab_QnGfEh",
+        "collapsible_tab_WjpjHQ",
+        "collapsible_tab_zMa6H9",
+        "collapsible_tab_GAteRW",
+        "collapsible_tab_dEXUjz",
+        "complementary_fAzRx9",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "color_scheme-icon-box": "scheme-4",
+        "card-grey-color": true,
+        "card_color_scheme-dark": "scheme-4",
+        "para_color": "#000000",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 200,
+        "padding_top-mobile": 0,
+        "padding_bottom-mobile": 100
+      }
+    },
+    "collage_GFKzcY": {
+      "type": "collage",
+      "blocks": {
+        "image_3E4Dch": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/savings-2789112_1920_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_3E4Dch"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-2",
+        "padding_top": 56,
+        "padding_bottom": 0
+      }
+    },
+    "two_column_text_CYKAki": {
+      "type": "two-column-text",
+      "name": "Two Column Text",
+      "settings": {
+        "heading": "<p>{{ product.metafields.custom.column_heading | metafield_tag }}</p>",
+        "description_color": "#000000",
+        "color_scheme": "scheme-3",
+        "description": "<p>{{ product.metafields.custom.column_description | metafield_tag }}</p>",
+        "button_label": "Add To Cart",
+        "button_link": "#",
+        "padding_top": 36,
+        "padding_bottom": 62,
+        "heading-numbers": 473,
+        "para-numbers": 449,
+        "padding_top-mobile": 18,
+        "padding_bottom-mobile": 60
+      }
+    },
+    "featured_product_slider_JH4zap": {
+      "type": "featured-product-slider",
+      "name": "Featured Product Slider",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "color_scheme-badge": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c",
+        "heading": "Why You’ll Love It",
+        "padding_top": 62,
+        "padding_bottom": 160,
+        "padding_top-mobile": 60,
+        "padding_bottom-mobile": 104,
+        "button_text": "Add To Cart",
+        "button_url": "#",
+        "featured_products": "{{ product.metafields.custom.feature_product.value }}"
+      }
+    },
+    "customer_reviews_bgzntt": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_CaK6g3": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"I fly every weekend now.\"",
+            "review_detail": "“After retiring, I wanted a hobby that got me outdoors. Kitty Hawk Kites helped me pick the right kite, and I’ve been flying ever since. Great quality and even better service.”",
+            "author_image": "shopify://shop_images/Frame_1000003293.png",
+            "author_name": "– Gary T., Oregon",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_hAdJdT": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"The best part of our beach trip!\"",
+            "review_detail": "“My husband and I bought a kite for our granddaughter — she couldn’t stop smiling! Easy to set up, and it flew perfectly even with low wind.”",
+            "author_image": "shopify://shop_images/Frame_1000003293_1.png",
+            "author_name": "– Linda M., Virginia",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_XkhB6X": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"Three generations flying together.\"",
+            "review_detail": "“Bought a couple of kites for a family reunion. The kids loved it, the adults loved it — we’ll be talking about that day for years!”",
+            "author_image": "shopify://shop_images/Frame_1000003293_2.png",
+            "author_name": "– Susan R., South Carolina",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_mc4Bax": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"I fly every weekend now.\"",
+            "review_detail": "“After retiring, I wanted a hobby that got me outdoors. Kitty Hawk Kites helped me pick the right kite, and I’ve been flying ever since. Great quality and even better service.”",
+            "author_image": "shopify://shop_images/Frame_1000003293.png",
+            "author_name": "– Gary T., Oregon",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        },
+        "review_NcYDxT": {
+          "type": "review",
+          "settings": {
+            "review_link": "",
+            "review_text": "\"The best part of our beach trip!\"",
+            "review_detail": "“My husband and I bought a kite for our granddaughter — she couldn’t stop smiling! Easy to set up, and it flew perfectly even with low wind.”",
+            "author_image": "shopify://shop_images/Frame_1000003293_1.png",
+            "author_name": "– Linda M., Virginia",
+            "color_scheme-card": "scheme-3",
+            "color_scheme-review": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c"
+          }
+        }
+      },
+      "block_order": [
+        "review_CaK6g3",
+        "review_hAdJdT",
+        "review_XkhB6X",
+        "review_mc4Bax",
+        "review_NcYDxT"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "heading": "Hear From Our Customers",
+        "padding_top": 235,
+        "padding_bottom": 152,
+        "padding_top-mobile": 120,
+        "padding_bottom-mobile": 120,
+        "overlay_image": "shopify://shop_images/Rectangle_70.png",
+        "overlay_opacity": 1,
+        "greyscale": true,
+        "color_scheme": ""
+      }
+    },
+    "specs_slider_t9JUMA": {
+      "type": "specs-slider",
+      "blocks": {
+        "comparison_slide_UJCQGE": {
+          "type": "comparison_slide",
+          "settings": {
+            "heading": "Compare Our Most Loved Delta Kites",
+            "heading-padding-bottom": 35,
+            "quick_add": "standard",
+            "center_text": true
+          }
+        }
+      },
+      "block_order": [
+        "comparison_slide_UJCQGE"
+      ],
+      "name": "Comparison Specs Slider",
+      "settings": {
+        "color_scheme": "scheme-4a99efe3-da9d-42fd-abda-fcb113cb73ec",
+        "table-color": "#000000",
+        "noslide": false,
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "padding_top-mobile": 100,
+        "padding_bottom-mobile": 100
+      }
+    },
+    "specs_slider_HDw74h": {
+      "type": "specs-slider",
+      "blocks": {
+        "detail_slide_tpb4M3": {
+          "type": "detail_slide",
+          "settings": {
+            "spec_heading": "Specs & Details",
+            "spec_heading-padding-bottom": 35,
+            "spec_center_text": false
+          }
+        }
+      },
+      "block_order": [
+        "detail_slide_tpb4M3"
+      ],
+      "name": "Comparison Specs Slider",
+      "settings": {
+        "color_scheme": "scheme-4a99efe3-da9d-42fd-abda-fcb113cb73ec",
+        "table-color": "#000000",
+        "noslide": false,
+        "padding_top": 0,
+        "padding_bottom": 160,
+        "padding_top-mobile": 100,
+        "padding_bottom-mobile": 100
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Frequently bought together:",
+        "card-grey-color": true,
+        "card-slider": true,
+        "card_color_scheme-dark": "scheme-4",
+        "heading_size": "h2",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-3",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "padding_top": 152,
+        "padding_bottom": 80,
+        "padding_top-mobile": 104,
+        "padding_bottom-mobile": 0
+      }
+    },
+    "social_UnqYCd": {
+      "type": "social",
+      "blocks": {
+        "image_kPJbxT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_83_2.png",
+            "link": ""
+          }
+        },
+        "image_YbWUzy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_79.png",
+            "link": ""
+          }
+        },
+        "image_fRFcj8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_80.png",
+            "link": ""
+          }
+        },
+        "image_yFE4UE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_81.png",
+            "link": ""
+          }
+        },
+        "image_bMALpb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_82_3.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_kPJbxT",
+        "image_YbWUzy",
+        "image_fRFcj8",
+        "image_yFE4UE",
+        "image_bMALpb"
+      ],
+      "name": "Social Media Marquee",
+      "settings": {
+        "heading": "Follow us on social media",
+        "color_scheme": "scheme-3",
+        "padding_top": 80,
+        "padding_bottom": 160,
+        "padding_top-mobile": 60,
+        "padding_bottom-mobile": 120
+      }
+    },
+    "newsletter_DfVEkg": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_nythNC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Got Questions?",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_yhXRe8": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Our kite experts are just a message away.</p>"
+          }
+        },
+        "email_form_NVnNC8": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_nythNC",
+        "paragraph_yhXRe8",
+        "email_form_NVnNC8"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "color_scheme-main": "scheme-2",
+        "color_scheme-form": "scheme-3",
+        "full_width": false,
+        "image-one": "shopify://shop_images/Rectangle_77.png",
+        "image-two": "shopify://shop_images/Rectangle_65.png",
+        "padding_top": 182,
+        "padding_bottom": 182,
+        "padding_top-mobile": 82,
+        "padding_bottom-mobile": 303
+      }
+    },
+    "complementary_products_wzrwKq": {
+      "type": "complementary-products",
+      "blocks": {
+        "frequently_NmHzDW": {
+          "type": "frequently",
+          "settings": {
+            "block_heading": "You may also like",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 4,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
+        }
+      },
+      "block_order": [
+        "frequently_NmHzDW"
+      ],
+      "disabled": true,
+      "name": "Complementary products",
+      "settings": {
+        "heading": "Complete the look",
+        "products_per_page": 4,
+        "image_ratio": "adapt",
+        "enable_quick_add": true,
+        "card_style": "standard"
+      }
+    },
+    "faq_BC93ia": {
+      "type": "faq",
+      "blocks": {
+        "accordion_hNqMqH": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do your kites really fly?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_nNDDUR": {
+          "type": "accordion",
+          "settings": {
+            "title": "Are your kites good for kids or beginners?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_d4TEUt": {
+          "type": "accordion",
+          "settings": {
+            "title": "What kind of kite should I buy for my wind conditions?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_rr3RMq": {
+          "type": "accordion",
+          "settings": {
+            "title": "Are your kites good for kids or beginners?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_xmFttd": {
+          "type": "accordion",
+          "settings": {
+            "title": "What’s included with my kite?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_qYEQeP": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do I need to buy anything extra?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_L3FXFt": {
+          "type": "accordion",
+          "settings": {
+            "title": "What’s your return policy?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_rNarm9": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_VzrxRg": {
+          "type": "accordion",
+          "settings": {
+            "title": "What if my kite breaks or doesn’t work right?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        },
+        "accordion_VxjPky": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can I visit your stores or fly with you in person?",
+            "content": "<p>We only sell kites that our team has tested and trust to fly. Whether you're a first-timer or a seasoned flyer, you'll find something that takes to the sky beautifully.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_hNqMqH",
+        "accordion_nNDDUR",
+        "accordion_d4TEUt",
+        "accordion_rr3RMq",
+        "accordion_xmFttd",
+        "accordion_qYEQeP",
+        "accordion_L3FXFt",
+        "accordion_rNarm9",
+        "accordion_VzrxRg",
+        "accordion_VxjPky"
+      ],
+      "name": "Faq",
+      "settings": {
+        "subheading": "Everything You Need to Know Before You Fly",
+        "heading": "Frequently Asked Questions",
+        "color_scheme": "scheme-3",
+        "color_scheme-noactive": "scheme-5c8b66bf-7206-4f06-bc5e-1db9c6e84f2c",
+        "color_scheme-active": "scheme-3",
+        "text": "",
+        "padding_top": 255,
+        "padding_bottom": 160,
+        "padding_top-mobile": 243,
+        "padding_bottom-mobile": 120
+      }
+    }
+  },
+  "order": [
+    "product_breadcrumb_HMJMy9",
+    "main",
+    "collage_GFKzcY",
+    "two_column_text_CYKAki",
+    "featured_product_slider_JH4zap",
+    "customer_reviews_bgzntt",
+    "specs_slider_t9JUMA",
+    "specs_slider_HDw74h",
+    "related-products",
+    "social_UnqYCd",
+    "newsletter_DfVEkg",
+    "complementary_products_wzrwKq",
+    "faq_BC93ia"
+  ]
+}

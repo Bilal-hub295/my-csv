@@ -1,0 +1,155 @@
+<style>
+  .hb-icon-box-columns{text-align: center;}
+  @media screen and (min-width: 767px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (min-width: 1199px){
+  .hb-icon-box-columns .icon-box-wrapper .icon-box{flex: 1 1 257px;}
+  }
+  .hb-icon-box-columns .icon-image-box{height: 64px; width: 64px; display: flex; margin: 0 auto 10.88px;; border-radius: 50%; align-items: center; justify-content: center; background-color: rgb(var(--color-foreground));}
+  @media screen and (max-width: 767px){
+  .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top-mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom-mobile }}px;
+    }
+  }
+</style>
+<div class="hb-icon-box-columns color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="icon-box-wrapper swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="icon-box swiper-slide">
+            {% if block.settings.icon != blank %}
+              <div class="icon-image-box">
+                <img src="{{ block.settings.icon | img_url: '64x64' }}" alt="Icon" class="icon-img">
+              </div>
+            {% endif %}
+            {% if block.settings.heading != blank %}
+              <h3 class="icon-heading">{{ block.settings.heading }}</h3>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let kiteSwiper = null;
+
+    function initKiteSwiper() {
+      if (window.innerWidth <= 767 && !kiteSwiper) {
+        kiteSwiper = new Swiper('.icon-box-wrapper', {
+          loop: true,
+          speed: 5000,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1.6,
+              spaceBetween: 0,
+            },
+            601: {
+              slidesPerView: 2.5,
+              spaceBetween: 0,
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+          },
+        });
+        document.querySelector('.icon-box-wrapper .swiper-wrapper').style.transitionTimingFunction = 'linear';
+      } else if (window.innerWidth > 1199 && kiteSwiper) {
+        kiteSwiper.destroy(true, true);
+        kiteSwiper = null;
+      }
+    }
+
+    initKiteSwiper();
+    window.addEventListener('resize', initKiteSwiper);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Icon Box Columns",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_box",
+      "name": "Icon Box",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Box Columns",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

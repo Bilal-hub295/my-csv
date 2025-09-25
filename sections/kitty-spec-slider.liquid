@@ -1,0 +1,604 @@
+<style>
+   .kitty-spec-slider.specs-and-feature-sec .spec-container{display: flex; gap: 109px;}
+    .kitty-spec-slider.specs-and-feature-sec .spec-row{display: flex; gap: 16px; align-items: flex-end;}
+    .kitty-spec-slider .kitty-specs-swiper{position: relative; padding-bottom: 200px;}
+    .kitty-spec-slider .kitty-specs-swiper .swiper-slide {overflow: hidden;}
+    .kitty-spec-slider.specs-and-feature-sec h2{max-width: 542px; margin: 0 auto; text-align: center;}
+    .kitty-spec-slider.specs-and-feature-sec .spec-table{flex-grow: 1;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-button{font-size: 32px; line-height: 24px; margin-bottom: 20px;}
+    .kitty-spec-slider.specs-and-feature-sec .slider-arrows{display: flex; gap: 8px;}
+    .kitty-spec-slider.specs-and-feature-sec .arrows{width: 64px; height: 64px;}
+    .kitty-spec-slider.specs-and-feature-sec .arrows svg{height: 100%; width: 100%;}
+    .kitty-spec-slider.specs-and-feature-sec .arrows svg rect{fill-opacity: 1; fill: rgb(var(--color-foreground));}
+    .kitty-spec-slider.specs-and-feature-sec .swiper-button-disabled svg rect{fill-opacity: 1; fill: rgb(var(--color-foreground), 0.3);}
+    .kitty-spec-slider.specs-and-feature-sec .swiper-button-disabled svg path{fill: rgb(var(--color-foreground));}
+    .kitty-spec-slider.specs-and-feature-sec .arrows-box{position: absolute; bottom: 0; z-index: 3;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-button span{color: rgba(var(--color-foreground), 0.3);}
+    .kitty-spec-slider.specs-and-feature-sec .spec-feature,.kitty-spec-slider.specs-and-feature-sec .spec-detail{padding: 12px 10px; flex: 0 0 22%; border-bottom: 1px solid rgb(var(--color-foreground), 0.1)}
+    .kitty-spec-slider.specs-and-feature-sec .spc-heading{margin-bottom: 45px; padding: 12px 10px; flex: 0 0 22%; border-bottom: 1px solid rgb(var(--color-foreground)); background-color: rgb(var(--color-foreground),0.1);}
+    .kitty-spec-slider.specs-and-feature-sec .spec-table{color: {{ section.settings.table-color }};}
+    .kitty-spec-slider.specs-and-feature-sec .spec-detail{opacity: 0.5;}
+    .kitty-spec-slider.specs-and-feature-sec .card-wrapper .card__heading {flex-grow: 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card__information .price {display: none !important;}
+    .kitty-spec-slider.specs-and-feature-sec .card--card {background-color: transparent;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-heading.featured-product { border-radius: 16px 16px 0 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card-wrapper.product-card-wrapper .card {padding: 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card--card .card__inner .card__media {border-radius: 16px;}
+    .kitty-spec-slider.specs-and-feature-sec .card-wrapper .card__heading {margin-bottom: 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card:not(.ratio) {min-height: 384px;}
+    .kitty-spec-slider.specs-and-feature-sec .button {background-color:#062F6D; color: #fff;}
+    .kitty-spec-slider.specs-and-feature-sec .button:after {content: none !important;}
+    .kitty-spec-slider.specs-and-feature-sec .card-information {text-align: center;}
+    .kitty-spec-slider.specs-and-feature-sec .card__information {text-align: center;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-button {display: flex; gap: 4px;}
+    .kitty-spec-slider.specs-and-feature-sec .card__heading {opacity:1 !important;}
+  @media screen and (min-width: 767px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+  .kitty-spec-slider.specs-and-feature-sec .spec-container{gap: 0; overflow-x: auto; padding-bottom: 38px;}
+  .kitty-spec-slider.specs-and-feature-sec .spec-table {min-width: 1100px; width: 100%;}
+    }
+     @media screen and (max-width: 767px){
+            .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top-mobile}}px;
+            padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+          }
+          .kitty-spec-slider .spec-image{display: none;}
+          .kitty-spec-slider.specs-and-feature-sec .arrows-box{position: relative; margin-top: 40px; display: flex; justify-content: flex-end; align-items: center; flex-direction: row-reverse; gap: 15px;}
+          .kitty-spec-slider.specs-and-feature-sec .spc-button{font-size: 24px; margin-bottom: 0;}
+          .kitty-spec-slider.specs-and-feature-sec .arrows{height: 48px; width: 48px;}
+          .kitty-spec-slider.specs-and-feature-sec .spec-table .spec-feature{text-transform: uppercase;}
+          .kitty-spec-slider.specs-and-feature-sec .spec-row{gap: 16px;}
+          .kitty-spec-slider.specs-and-feature-sec .inner_span {flex-shrink: 0;}
+          .kitty-spec-slider .kitty-specs-swiper{padding-bottom: 0;}
+        }
+</style>
+
+{%- unless section.settings.quick_add == 'none' -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if section.settings.quick_add == 'standard' -%}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<div class="kitty-spec-slider specs-and-feature-sec color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="kitty-specs-swiper swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide spec-slide">
+            <h2 style="padding-bottom: {{ block.settings.heading-padding-bottom }}px; {% if block.settings.center_text %}text-align: center;{% endif %}">
+              {{ block.settings.heading | default: 'Specs & Details' }}
+            </h2>
+            <div class="spec-container">
+              <div class="spec-table">
+                <div class="spec-row">
+                  <h4 class="spc-heading">Feature/ Model</h4>
+                  <div class="spc-heading featured-product">
+                    {% if block.settings.featured_product != blank %}
+                      {% assign product = all_products[block.settings.featured_product] %}
+                      {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: block.settings.image_ratio,
+                        image_shape: block.settings.image_shape,
+                        lazy_load: lazy_load,
+                        show_secondary_image: block.settings.show_secondary_image,
+                        show_vendor: block.settings.show_vendor,
+                        show_rating: true,
+                        skip_styles: skip_card_product_styles,
+                        section_id: block.id,
+                        quick_add: block.settings.quick_add
+                      %}
+                    {% endif %}
+                  </div>
+                  <div class="spc-heading featured-product">
+                    {% if block.settings.featured_product2 != blank %}
+                      {% assign product = all_products[block.settings.featured_product2] %}
+
+                      {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: block.settings.image_ratio,
+                        image_shape: block.settings.image_shape,
+                        lazy_load: lazy_load,
+                        show_secondary_image: block.settings.show_secondary_image,
+                        show_vendor: block.settings.show_vendor,
+                        show_rating: true,
+                        skip_styles: skip_card_product_styles,
+                        section_id: block.id,
+                        quick_add: block.settings.quick_add
+                      %}
+                    {% endif %}
+                  </div>
+                  <div class="spc-heading featured-product">
+                    {% if block.settings.featured_product3 != blank %}
+                      {% assign product = all_products[block.settings.featured_product3] %}
+
+                      {% render 'card-product',
+                        card_product: product,
+                        show_rating: true,
+                        media_aspect_ratio: block.settings.image_ratio,
+                        image_shape: block.settings.image_shape,
+                        lazy_load: lazy_load,
+                        show_secondary_image: block.settings.show_secondary_image,
+                        show_vendor: block.settings.show_vendor,
+                        skip_styles: skip_card_product_styles,
+                        section_id: block.id,
+                        quick_add: block.settings.quick_add
+                      %}
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="spec-details">
+                  {% if block.settings.best_for != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Best For</div>
+                      <div class="spec-detail">{{ block.settings.best_for }}</div>
+                      <div class="spec-detail">{{ block.settings.best_for2 }}</div>
+                      <div class="spec-detail">{{ block.settings.best_for3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.kite_type != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Kite Type</div>
+                      <div class="spec-detail">{{ block.settings.kite_type }}</div>
+                      <div class="spec-detail">{{ block.settings.kite_type2 }}</div>
+                      <div class="spec-detail">{{ block.settings.kite_type3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.wingspan != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Wingspan</div>
+                      <div class="spec-detail">{{ block.settings.wingspan }}</div>
+                      <div class="spec-detail">{{ block.settings.wingspan2 }}</div>
+                      <div class="spec-detail">{{ block.settings.wingspan3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.wind_range != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Wind Range</div>
+                      <div class="spec-detail">{{ block.settings.wind_range }}</div>
+                      <div class="spec-detail">{{ block.settings.wind_range2 }}</div>
+                      <div class="spec-detail">{{ block.settings.wind_range3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.skill_level != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Skill Level</div>
+                      <div class="spec-detail">{{ block.settings.skill_level }}</div>
+                      <div class="spec-detail">{{ block.settings.skill_level2 }}</div>
+                      <div class="spec-detail">{{ block.settings.skill_level3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.setup_time != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Setup Time</div>
+                      <div class="spec-detail">{{ block.settings.setup_time }}</div>
+                      <div class="spec-detail">{{ block.settings.setup_time2 }}</div>
+                      <div class="spec-detail">{{ block.settings.setup_time3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.portability != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Line Included</div>
+                      <div class="spec-detail">{{ block.settings.portability }}</div>
+                      <div class="spec-detail">{{ block.settings.portability2 }}</div>
+                      <div class="spec-detail">{{ block.settings.portability3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.stunt_control != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Stunt Control</div>
+                      <div class="spec-detail">{{ block.settings.stunt_control }}</div>
+                      <div class="spec-detail">{{ block.settings.stunt_control2 }}</div>
+                      <div class="spec-detail">{{ block.settings.stunt_control3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.portability != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Portability</div>
+                      <div class="spec-detail">{{ block.settings.portability }}</div>
+                      <div class="spec-detail">{{ block.settings.portability2 }}</div>
+                      <div class="spec-detail">{{ block.settings.portability3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.vibe != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Vibe</div>
+                      <div class="spec-detail">{{ block.settings.vibe }}</div>
+                      <div class="spec-detail">{{ block.settings.vibe2 }}</div>
+                      <div class="spec-detail">{{ block.settings.vibe3 }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.price_range != blank %}
+                    <div class="spec-row">
+                      <div class="spec-feature">Price Range</div>
+                      <div class="spec-detail">{{ block.settings.price_range }}</div>
+                      <div class="spec-detail">{{ block.settings.price_range2 }}</div>
+                      <div class="spec-detail">{{ block.settings.price_range3 }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="arrows-box">
+        <h4 class="spc-button">
+          <div class="inner_span">Next:</div>
+          <span> Specifications and details</span>
+        </h4>
+        <div class="slider-arrows">
+          <div class="spc-button-prev arrows">{{- 'icon-leftarrow.svg' | inline_asset_content -}}</div>
+          <div class="spc-button-next arrows">{{- 'icon-rightarrow.svg' | inline_asset_content -}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperEl = document.querySelector('.kitty-specs-swiper');
+    if (swiperEl && !swiperEl.classList.contains('swiper-initialized')) {
+      new Swiper(swiperEl, {
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: false,
+        navigation: {
+          nextEl: '.spc-button-next',
+          prevEl: '.spc-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Kitty Spec Slider",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "table-color",
+      "label": "Table Color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "spec_slide",
+      "name": "Spec Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Slide Heading",
+          "default": "Specs & Details"
+        },
+        {
+          "type": "range",
+          "id": "heading-padding-bottom",
+          "min": 0,
+          "max": 70,
+          "step": 7,
+          "label": "Heading PB",
+          "default": 35
+        },
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Select 1st product"
+        },
+        {
+          "type": "product",
+          "id": "featured_product2",
+          "label": "Select 2nd product"
+        },
+        {
+          "type": "product",
+          "id": "featured_product3",
+          "label": "Select 3rd product"
+        },
+        {
+          "type": "select",
+          "id": "quick_add",
+          "default": "none",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+            },
+            {
+              "value": "standard",
+              "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+            }
+          ]
+        },
+
+        {
+          "type": "checkbox",
+          "id": "center_text",
+          "label": "Center Heading"
+        },
+        {
+          "type": "text",
+          "id": "best_for",
+          "label": "Best For 1st Product",
+          "default": "Beginners & Families"
+        },
+        {
+          "type": "text",
+          "id": "best_for2",
+          "label": "Best For 2nd Product",
+          "default": "Beginners to Intermediates"
+        },
+        {
+          "type": "text",
+          "id": "best_for3",
+          "label": "Best For 3rd Product",
+          "default": "Relaxed Flying & Bigger Skies"
+        },
+        {
+          "type": "text",
+          "id": "kite_type",
+          "label": "Kite Type 1st Product",
+          "default": "Single-Line Delta"
+        },
+        {
+          "type": "text",
+          "id": "kite_type2",
+          "label": "Kite Type 2nd Product",
+          "default": "Dual-Line Stunt"
+        },
+        {
+          "type": "text",
+          "id": "kite_type3",
+          "label": "Kite Type 3rd Product",
+          "default": "Single-Line Delta"
+        },
+        {
+          "type": "text",
+          "id": "wingspan",
+          "label": "Wingspan 1st Product",
+          "default": "60 in."
+        },
+        {
+          "type": "text",
+          "id": "wingspan2",
+          "label": "Wingspan 2nd Product",
+          "default": "55 in."
+        },
+        {
+          "type": "text",
+          "id": "wingspan3",
+          "label": "Wingspan 3rd Product",
+          "default": "84 in."
+        },
+        {
+          "type": "text",
+          "id": "wind_range",
+          "label": "Wind Range 1st Product",
+          "default": "5–25 mph"
+        },
+        {
+          "type": "text",
+          "id": "wind_range2",
+          "label": "Wind Range 2nd Product",
+          "default": "5–25 mph"
+        },
+        {
+          "type": "text",
+          "id": "wind_range3",
+          "label": "Wind Range 3rd Product",
+          "default": "5–18 mph"
+        },
+        {
+          "type": "text",
+          "id": "skill_level",
+          "label": "Skill Level 1st Product",
+          "default": "Beginner"
+        },
+        {
+          "type": "text",
+          "id": "skill_level2",
+          "label": "Skill Level 2nd Product",
+          "default": "Beginner / Intermediate"
+        },
+        {
+          "type": "text",
+          "id": "skill_level3",
+          "label": "Skill Level 3rd Product",
+          "default": "Beginner"
+        },
+        {
+          "type": "text",
+          "id": "setup_time",
+          "label": "Setup Time 1st Product",
+          "default": "Under 1 min"
+        },
+        {
+          "type": "text",
+          "id": "setup_time2",
+          "label": "Setup Time 2nd Product",
+          "default": "~5 min"
+        },
+        {
+          "type": "text",
+          "id": "setup_time3",
+          "label": "Setup Time 3rd Product",
+          "default": "Under 2 min"
+        },
+        {
+          "type": "text",
+          "id": "line_included",
+          "label": "Line Included 1st Product",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "line_included2",
+          "label": "Line Included 2nd Product",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "line_included3",
+          "label": "Line Included 3rd Product",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "stunt_control",
+          "label": "Stunt Control 1st Product",
+          "default": "No"
+        },
+        {
+          "type": "text",
+          "id": "stunt_control2",
+          "label": "Stunt Control 2nd Product",
+          "default": "Yes (Dual Line)"
+        },
+        {
+          "type": "text",
+          "id": "stunt_control3",
+          "label": "Stunt Control 3rd Product",
+          "default": "No"
+        },
+        {
+          "type": "text",
+          "id": "portability",
+          "label": "Portability 1st Product",
+          "default": "Very Compact"
+        },
+        {
+          "type": "text",
+          "id": "portability2",
+          "label": "Portability 2nd Product",
+          "default": "Compact"
+        },
+        {
+          "type": "text",
+          "id": "portability3",
+          "label": "Portability 3rd Product",
+          "default": "Slightly Larger Bag"
+        },
+        {
+          "type": "text",
+          "id": "vibe",
+          "label": "Vibe 1st Product",
+          "default": "Chill & Easy"
+        },
+        {
+          "type": "text",
+          "id": "vibe2",
+          "label": "Vibe 2nd Product",
+          "default": "Fast & Playful"
+        },
+        {
+          "type": "text",
+          "id": "vibe3",
+          "label": "Vibe 3rd Product",
+          "default": "Majestic, Eye-Catching"
+        },
+        {
+          "type": "text",
+          "id": "price_range",
+          "label": "Price Range 1st Product",
+          "default": "$"
+        },
+        {
+          "type": "text",
+          "id": "price_range2",
+          "label": "Price Range 2nd Product",
+          "default": "$$"
+        },
+        {
+          "type": "text",
+          "id": "price_range3",
+          "label": "Price Range 3rd Product",
+          "default": "$$$"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kitty Spec Slider",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "spec_slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,203 @@
+<style>
+  .hb-social-marquee {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hb-social-marquee__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
+  .social-marquee__heading{max-width: 500px;}
+
+  .hb-social-marquee .marquee-track {
+    display: flex;
+    align-items: center;
+    animation: marquee-scroll 15s linear infinite;
+  }
+
+  .hb-social-marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  .marquee-image-box {
+    flex: 0 0 auto;
+    width: 320px;
+    height: 370px;
+    margin: 0 8px;
+  }
+
+  .marquee-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .hb-social-marquee .list-social{gap: 10px;}
+  .hb-social-marquee .list-social__link{color: #fff; background-color: rgb(var(--color-foreground)); border-radius: 50%; height: 64px; width: 64px; justify-content: center;}
+.hb-social-marquee .list-social__item .svg-wrapper{width: 30px; height: 30px;}
+.mobile-social-icons{padding-top: 38px;}
+.hb-social-marquee .list-social__item .icon{height: 100%; width: 100%;}
+.hb-social-marquee .footer-block__brand-info .footer__list-social.list-social{justify-content: space-between;}
+@media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .mobile-social-icons{display: none; padding-top: 38px;}
+  }
+  @media screen and (max-width: 767px){
+          .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top-mobile}}px;
+          padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+        }
+        .desktop-social-icons{display: none;}
+        .social-marquee__heading{max-width: 349px; margin: 0 auto; text-align: center;}
+    }
+      @media screen and (max-width: 400px){
+        .section-{{ section.id }}-padding{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        }
+  }
+</style>
+
+<div class="hb-social-marquee color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="hb-social-marquee__top">
+      <h2 class="social-marquee__heading">{{ section.settings.heading }}</h2>
+      <div class="desktop-social-icons">
+        {%- render 'social-icons' -%}
+        </div>
+    </div>
+    <div class="marquee-track">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-image-box">
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}">
+                <img src="{{ block.settings.image | img_url: '400x' }}" width="323" height="370" alt="Marquee Image">
+              </a>
+            {% else %}
+              <img src="{{ block.settings.image | img_url: '400x' }}" width="323" height="370" alt="Marquee Image">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank %}
+          <div class="marquee-image-box">
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}">
+                <img src="{{ block.settings.image | img_url: '400x' }}" width="323" height="370" alt="Marquee Image">
+              </a>
+            {% else %}
+              <img src="{{ block.settings.image | img_url: '400x' }}" width="323" height="370" alt="Marquee Image">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mobile-social-icons">
+        {%- render 'social-icons' -%}
+        </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Social Media Marquee",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Follow us on Social Media",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Marquee Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Image Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "Social Media Marquee",
+      "category": "Custom",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}

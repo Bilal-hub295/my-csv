@@ -1,0 +1,295 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "vendor_Kpt7fp": {
+          "type": "vendor",
+          "settings": {
+            "add_vendor_link": true,
+            "padding_bottom": 20
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": 9,
+            "product_show_cutline": true,
+            "show_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 20
+          }
+        },
+        "variant_selectors_JamLND": {
+          "type": "variant-selectors",
+          "settings": {
+            "option_size_swatch": 34,
+            "option_size_radio": 50,
+            "option_space": 30,
+            "padding_bottom": 30
+          }
+        },
+        "price_zTpR4f": {
+          "type": "price",
+          "settings": {
+            "price_size": 6,
+            "padding_bottom": 20
+          }
+        },
+        "text_8aVjLN": {
+          "type": "text",
+          "settings": {
+            "title": "<p>{{ product.metafields.theme.badge.value }}</p>",
+            "padding_bottom": 20
+          }
+        },
+        "siblings_bMeCKi": {
+          "type": "siblings",
+          "settings": {
+            "siblings_collection": "{{ product.metafields.theme.siblings.value }}",
+            "cutline": "{{ product.metafields.theme.cutline.value }}",
+            "option_size_sibling": 50,
+            "padding_bottom": 20
+          }
+        },
+        "quantity_WJVfcz": {
+          "type": "quantity",
+          "settings": {
+            "show_quantity": true,
+            "padding_bottom": 20
+          }
+        },
+        "add_buttons_4nEALH": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 20
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "style": "accordions",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Skill Level",
+            "icon_name_1": "",
+            "raw_content_1": "<p>{{ product.metafields.custom.by_skill_level.value }}</p>",
+            "title_2": "Wing Span",
+            "icon_name_2": "",
+            "raw_content_2": "<p>{{ product.metafields.custom.wingspan.value }}</p>",
+            "title_3": "Wind Conditions",
+            "icon_name_3": "",
+            "raw_content_3": "<p>{{ product.metafields.custom.wind_conditions.value }}</p>",
+            "title_4": "Recommended Flying Line",
+            "icon_name_4": "",
+            "raw_content_4": "<p>{{ product.metafields.custom.recommended_flying_line.value }}</p>",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "complimentary_QRMcqz": {
+          "type": "complimentary",
+          "settings": {
+            "title": "Frequently Bought together",
+            "complimentary_list_limit": 3,
+            "padding_bottom": 20
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+            "share_label": "Share",
+            "target_device": "",
+            "padding_bottom": 20
+          }
+        },
+        "ed494e82-782c-41d2-942e-f4f5043dc861": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "vendor_Kpt7fp",
+        "title",
+        "variant_selectors_JamLND",
+        "price_zTpR4f",
+        "text_8aVjLN",
+        "siblings_bMeCKi",
+        "quantity_WJVfcz",
+        "add_buttons_4nEALH",
+        "description",
+        "pickup",
+        "complimentary_QRMcqz",
+        "sharing",
+        "ed494e82-782c-41d2-942e-f4f5043dc861"
+      ],
+      "settings": {
+        "layout": "thumbnails-below@slides",
+        "image_width": "wide",
+        "image_spacing": 10,
+        "align": "left",
+        "bg": "palette--light bg--neutral",
+        "mobile_layout": "carousel",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "alt_text_enable": true,
+        "alt_text_icon": "icon-ruler",
+        "product_breadcrumbs_enable": false,
+        "product_breadcrumbs_list": [],
+        "width": "wrapper",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "section_custom_content_4kKc7z": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text": {
+      "type": "section-double",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 15,
+            "overlay_color": "#000000",
+            "enable_overlay_text": false,
+            "kicker": "",
+            "title": "",
+            "richtext": "",
+            "text_align": "align--middle-center",
+            "text_color": "text--white",
+            "link_text": "",
+            "link": "",
+            "button_color": "btn--white",
+            "button_style": "btn uppercase"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "kicker": "Image with text",
+            "title": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "font_size": 5,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "button_text": "",
+            "button_url": "",
+            "button_color": "btn--neutral",
+            "button_style": "caps--link",
+            "text_color": "text--neutral",
+            "bg_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "use_screen_one_half",
+        "brick_gutter": 0,
+        "borders": false,
+        "bg_color": "",
+        "preload_image": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1736436795361ae0f2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_mpAfnw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_mpAfnw"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "disabled": true,
+      "settings": {
+        "product_reviews_enable": false,
+        "bg": "palette--light bg--accent",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "heading": "You might also like",
+        "bg": "palette--light bg--neutral",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_small": 1.2,
+        "related_products_enable": true,
+        "limit": 6,
+        "product_recommendations_heading": "Related products",
+        "show_recently_viewed": true,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "product_recently_heading": "Recently viewed",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_custom_content_4kKc7z",
+    "image-with-text",
+    "1736436795361ae0f2",
+    "reviews",
+    "related"
+  ]
+}

@@ -1,0 +1,101 @@
+<style>
+    .hb-image-marquee {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .hb-image-marquee .marquee-track {
+      display: flex;
+      align-items: center;
+      animation: marquee-scroll 10s linear infinite;
+    }
+  .hb-image-marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    .marquee-image-box {
+      flex: 0 0 auto;
+      width: 140px;
+      margin: 0 50px;
+    }
+
+    .marquee-image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes marquee-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+</style>
+
+<div class="hb-image-marquee color-{{ section.settings.color_scheme }}">
+  <div class="marquee-track">
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <div class="marquee-image-box">
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}">
+              <img src="{{ block.settings.image | img_url: '200x' }}" alt="Marquee Image">
+            </a>
+          {% else %}
+            <img src="{{ block.settings.image | img_url: '200x' }}" alt="Marquee Image">
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <div class="marquee-image-box">
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}">
+              <img src="{{ block.settings.image | img_url: '200x' }}" alt="Marquee Image">
+            </a>
+          {% else %}
+            <img src="{{ block.settings.image | img_url: '200x' }}" alt="Marquee Image">
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image Marquee",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Marquee Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Image Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 15,
+  "presets": [
+    {
+      "name": "Image Marquee",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": true,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 35,
+        "overlay_color": "#191008",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "product",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 10,
+        "overlay_color": "#333333",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_3Xnyet": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_NqRCMC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Quantum2.0-23_1800x1800_68b3a9b0-958d-4f5d-a022-d93bb4825d91.webp",
+            "shape_class": "rounded-full",
+            "title": "Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/sale-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_qmTTQC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/snowman_on_bike__77492_1100x_9b2b992a-04ce-45e4-8b3d-d5f71958730c.jpg",
+            "shape_class": "rounded-full",
+            "title": "Wind Art",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/sale-spinners",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_KC74R7": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/OBXJohnBRinger-Girl_550x_1.webp",
+            "shape_class": "rounded-full",
+            "title": "Apparel",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/sale-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_RK6BjV": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/b04158ebf91d8490f4309f8c847fab50a411da0af7e9dae83692c0446adce3da_1100x_8f305280-fea9-4cb7-b7d9-9735fdd8f942.webp",
+            "shape_class": "rounded-full",
+            "title": "Toys",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/toys-on-sale",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NqRCMC",
+        "text_block_qmTTQC",
+        "text_block_KC74R7",
+        "text_block_RK6BjV"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "55039757-b60f-4b3f-916e-787e313f0e41": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "section_columns_3Xnyet",
+    "main",
+    "55039757-b60f-4b3f-916e-787e313f0e41"
+  ]
+}

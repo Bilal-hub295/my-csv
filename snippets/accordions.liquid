@@ -1,0 +1,67 @@
+<style>
+    .hb-accordion{padding: 32px; cursor: pointer; border-radius: 16px; transition: background-color 0.2s ease, color 0.2s ease; margin-bottom: 16px; }
+    .accordions-box .hb-accordion:last-child{margin-bottom: 0;}
+    .hb-accordion-toggle{display: flex; gap: 60px; justify-content: space-between; line-height: 38px;}
+    .hb-accordion .icon-up,.hb-accordion.active .icon-down{display: none;}
+    .hb-accordion.active .icon-up{display: block;}
+  .hb-accordion .accordion-content { max-height: 0; padding: 0 56px 0 0; overflow: hidden; transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1); pointer-events: none;}
+  .hb-accordion.active .accordion-content { max-height: 999px; padding-top: 12px;}
+  @media screen and (max-width: 767px){
+  .hb-accordion-toggle{gap: 24px;}
+  }
+</style>
+<div class="accordions-box">
+{% for block in section.blocks %}
+  <div class="hb-accordion color-{{ section.settings.color_scheme-noactive }} color-{{ section.settings.color_scheme-active }}" {{ block.shopify_attributes }}>
+    <h3 class="hb-accordion-toggle">
+      <div class="accordion-title">
+        {{ block.settings.title }}
+      </div>
+      <div class="accordions-icon">
+        <span class="icon-down">{{- 'arrow-down.svg' | inline_asset_content -}}</span>
+        <span class="icon-up">{{- 'arrow-up.svg' | inline_asset_content -}}</span>
+      </div>
+    </h3>
+    <div class="accordion-content rte">
+      {{ block.settings.content }}
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const accordions = document.querySelectorAll('.hb-accordion');
+    if (accordions.length > 0) {
+      accordions[0].classList.remove('color-{{ section.settings.color_scheme-noactive }}');
+    }
+    if (accordions.length > 0) {
+      accordions[0].classList.add('active');
+    }
+
+    document.querySelectorAll('.hb-accordion-toggle').forEach((button) => {
+      button.addEventListener('click', function () {
+        const allAccordions = document.querySelectorAll('.hb-accordion');
+        const current = this.closest('.hb-accordion');
+
+        allAccordions.forEach((accordion) => {
+          if (accordion !== current) {
+            accordion.classList.remove('active', 'color-{{ section.settings.color_scheme-active }}');
+            accordion.classList.add('color-{{ section.settings.color_scheme-noactive }}');
+          }
+        });
+
+        current.classList.toggle('active');
+
+        if (current.classList.contains('active')) {
+          current.classList.remove('color-{{ section.settings.color_scheme-noactive }}');
+          current.classList.add('color-{{ section.settings.color_scheme-active }}');
+        } else {
+          current.classList.remove('color-{{ section.settings.color_scheme-active }}');
+          current.classList.add('color-{{ section.settings.color_scheme-noactive }}');
+        }
+      });
+    });
+  });
+</script>
+

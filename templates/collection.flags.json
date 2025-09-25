@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": true,
+        "show_description_below": true,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 35,
+        "overlay_color": "#191008",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 10,
+        "overlay_color": "#333333",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_bGUhWX": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_PmjkRQ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/garden-flags.jpg",
+            "shape_class": "rounded-full",
+            "title": "Garden Flags",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/garden-flags",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_MYjktp": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/house-flags_1.webp",
+            "shape_class": "rounded-full",
+            "title": "House Flags",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_LwfapD": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/fcc8abf2c31b3ac9054769d0530b893db1c05d32ce3f0a523004de8cebd45219_b55b565f-b30b-4560-bda9-feeb1d54ad0f_1.webp",
+            "shape_class": "rounded-full",
+            "title": "Seasonal Flags",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/seasonal-flags",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_FDxMr9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/477c61dab283e372824452d74e0739004e469eae0b02091646ec789b2d722deb_64a1c7f6-dcf4-4d99-b7cc-865f475c2eca.webp",
+            "shape_class": "rounded-full",
+            "title": "Patriotic Flags",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/patriotic-flags",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_XjJ8hy": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/176203-1.jpg",
+            "shape_class": "rounded-full",
+            "title": "Pirate Flags",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/pirate-flags",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_PmjkRQ",
+        "text_block_MYjktp",
+        "text_block_LwfapD",
+        "text_block_FDxMr9",
+        "text_block_XjJ8hy"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 5,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "55039757-b60f-4b3f-916e-787e313f0e41": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "section_columns_bGUhWX",
+    "main",
+    "55039757-b60f-4b3f-916e-787e313f0e41"
+  ]
+}

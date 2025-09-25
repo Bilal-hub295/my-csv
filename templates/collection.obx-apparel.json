@@ -1,0 +1,231 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": true,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 35,
+        "overlay_color": "#191008",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 10,
+        "overlay_color": "#333333",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_wPhPhY": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_LUwXeY": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_2584_1100x_cb36377c-8709-4a50-a718-2617e4a78260.webp",
+            "shape_class": "rounded-full",
+            "title": "OBX Hats",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/hat",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_9TnWip": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_9555.jpg",
+            "shape_class": "rounded-full",
+            "title": "OBX Sweatshirts & Hoodies",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/obx-sweatshirts",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_TPFwPt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_5603_1100x_3876f39f-a703-4420-a284-55f00b14ba5f.webp",
+            "shape_class": "rounded-full",
+            "title": "OBX T-Shirts",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/obx-t-shirts",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_pihzyJ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/OBXKiaraFleeceShort_550x_0ac9a4fd-53a3-4b1b-a7c7-e488f5384d6b.webp",
+            "shape_class": "rounded-full",
+            "title": "Outer Banks x Volcom",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/outer-banks-tv-show-sale",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_peacGU": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/9b115a9fab7bb6f39b90a5fa7647013770538da3b512359d693d427c8737bec0_1.jpg",
+            "shape_class": "rounded-full",
+            "title": "Kitty Hawk Kites Apparel",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/khk-apparel",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_YM8BrD": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_0352_1_1100x_0b9025d3-fa8e-4b6b-8f8c-2c5f1f50175e.webp",
+            "shape_class": "rounded-full",
+            "title": "Outer Banks X Life is Good",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/outer-banks-x-life-is-good",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_LUwXeY",
+        "text_block_9TnWip",
+        "text_block_TPFwPt",
+        "text_block_pihzyJ",
+        "text_block_peacGU",
+        "text_block_YM8BrD"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 6,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "filters"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "55039757-b60f-4b3f-916e-787e313f0e41": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "section_columns_wPhPhY",
+    "main",
+    "55039757-b60f-4b3f-916e-787e313f0e41"
+  ]
+}

@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "linklist": {
+          "type": "linklist",
+          "disabled": true,
+          "settings": {
+            "linklist": "2024-master-menu",
+            "title": "",
+            "accordion_default": "accordion-is-open"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "Contact us",
+            "text": "<p>Orders@KittyHawk.com</p>",
+            "text_size": 4,
+            "accordion_default": ""
+          }
+        },
+        "f2673a40-0cbb-4b2f-9427-fecc030a5fac": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "footer",
+            "title": "",
+            "accordion_default": ""
+          }
+        },
+        "4a910b33-e8d1-4571-9e78-a143b841df95": {
+          "type": "linklist",
+          "settings": {
+            "linklist": "partner-websites",
+            "title": "",
+            "accordion_default": ""
+          }
+        }
+      },
+      "block_order": [
+        "linklist",
+        "text",
+        "f2673a40-0cbb-4b2f-9427-fecc030a5fac",
+        "4a910b33-e8d1-4571-9e78-a143b841df95"
+      ],
+      "settings": {
+        "menu_position": "left",
+        "logo_max_limit": 120,
+        "width": "wrapper--full",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "subfooter": {
+      "type": "subfooter",
+      "settings": {
+        "footer_secondary_linklist": "footer",
+        "footer_payment_enable": false,
+        "footer_social_enable": false,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "width": "wrapper--full",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "subfooter"
+  ]
+}

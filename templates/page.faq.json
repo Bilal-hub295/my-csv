@@ -1,0 +1,422 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "settings": {
+        "image": "shopify://shop_images/IMG253.jpg",
+        "height": "use_screen_one_fifth",
+        "overlay_opacity": 50,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_richtext_4Twgnf": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_iCGQrR": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "Customer Service",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "heading_UmHWhX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions",
+            "text_size": 8
+          }
+        },
+        "text_GyMk8m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you don't see your question below, or need more information, please reach out to orders@kittyhawk.com</p>",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        },
+        "button_ggQQxd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link_text_1": "Shop all",
+            "link_1": "shopify://collections/all",
+            "button_size_1": "btn--medium",
+            "button_style_1": "btn-text-thick-line",
+            "button_color_1": "btn--neutral",
+            "link_text_2": "",
+            "link_2": "",
+            "button_size_2": "btn--medium",
+            "button_style_2": "btn-text-thick-line",
+            "button_color_2": "btn--neutral",
+            "link_text_3": "",
+            "link_3": "",
+            "button_size_3": "btn--long",
+            "button_style_3": "btn-text-thick-line",
+            "button_color_3": "btn--white"
+          }
+        }
+      },
+      "block_order": [
+        "kicker_iCGQrR",
+        "heading_UmHWhX",
+        "text_GyMk8m",
+        "button_ggQQxd"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq": {
+      "type": "section-faq",
+      "blocks": {
+        "faq-0": {
+          "type": "text",
+          "settings": {
+            "title": "Does Kitty Hawk Kites Offer Free Shipping?",
+            "content": "<p>Free shipping is available on orders over $99 and will apply automatically in your cart.</p><p></p><p>Some select items are excluded from free shipping due to size and/or weight, like Bogg Bags, Neso Tents, and some accessories.</p><p>See the entire Free Shipping Policy <a href=\"https://store.kittyhawk.com/pages/free-shipping-offer\" title=\"https://store.kittyhawk.com/pages/free-shipping-offer\">here</a>.</p>"
+          }
+        },
+        "faq-2": {
+          "type": "text",
+          "settings": {
+            "title": "Why is My Discount Code Not Working?",
+            "content": "<p>All of our discount codes are automated and will not work unless all requirements have been met. Typical discount requirements include:</p><ul><li>Minimum order cost</li><li>Only specific products included in discount</li><li>Discount only applies to a customer's first order</li></ul><p>Unless specified, our discounts do not combine. Our check out automatically uses the best discount when multiple are attempted.</p>"
+          }
+        },
+        "text_dBwgF8": {
+          "type": "text",
+          "settings": {
+            "title": "Does Kitty Hawk Kites Price Match?",
+            "content": "<p>Yes, Kitty Hawk Kites does offer price matching. Please see our entire Price Match Policy <a href=\"https://store.kittyhawk.com/pages/price-match-guarantee\" title=\"https://store.kittyhawk.com/pages/price-match-guarantee\">here</a>.</p>"
+          }
+        },
+        "text_gyJVNG": {
+          "type": "text",
+          "settings": {
+            "title": "Are In-Store and Online Inventories the Same?",
+            "content": "<p>No, there are differences in inventory types, quantiies, and prices between online and in-store. For more information please see our Inventory/Pricing Policy <a href=\"https://store.kittyhawk.com/pages/inventory-pricing-policy\" title=\"https://store.kittyhawk.com/pages/inventory-pricing-policy\">here</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-0",
+        "faq-2",
+        "text_dBwgF8",
+        "text_gyJVNG"
+      ],
+      "settings": {
+        "title": "Check Out",
+        "title_align": "text-left",
+        "title_size": 7,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_UVfmwQ": {
+      "type": "section-faq",
+      "blocks": {
+        "text_qCBkpp": {
+          "type": "text",
+          "settings": {
+            "title": "Why Didn't I Receive an Order Confirmation Email?",
+            "content": "<p>Sometimes our automated confirmation emails get stuck in spam or just get blocked entirely by your email provider. If you email us at orders@kittyhawk.com with this inquiry and the name the order was placed under our online sales team can pull up your information and resend the confirmation email.</p>"
+          }
+        },
+        "text_ftNCPz": {
+          "type": "text",
+          "settings": {
+            "title": "How Long Does it Take to Ship?",
+            "content": "<p>Our standard shipping is typically 1-2 days processing and 3-5 Business Days for shipment. We do not process or ship on the weekends.</p>"
+          }
+        },
+        "text_Hnn4Ti": {
+          "type": "text",
+          "settings": {
+            "title": "Why Didn't I Receive a Tracking Number?",
+            "content": "<p>Sometimes our automated emails get stuck in spam or just get blocked entirely by your email provider. If you email us at orders@kittyhawk.com with this inquiry and the name the order was placed under our online sales team can pull up your information and get you your tracking number.</p>"
+          }
+        },
+        "text_YtjXrB": {
+          "type": "text",
+          "settings": {
+            "title": "Why Hasn't My Tracking Updated?",
+            "content": "<p>Please allow at least 24 hours for tracking details to update.</p><p>For orders shipped through the USPS, packages are not scanned until they reach their first distribution center, which for us is typically Richmond VA. In heavy volume shipping times, our packages sometimes get pushed to Dulles VA for distribution instead. Only once it arrives at the distribution center will the tracking update beyond the label printing.</p>"
+          }
+        },
+        "text_LnrfGD": {
+          "type": "text",
+          "settings": {
+            "title": "Has My Package Been Lost in Transit?",
+            "content": "<p>If your tracking hasn't updated for a few days since it was fulfilled, we suggest submitting a package inquiry directly with the Carrier using your tracking number and generally that will get the package moving. </p><p>If the tracking continues to not update or the carrier claims to have lost the package, please reach out to orders@kittyhawk.com</p><p>Once 15 days or more has passed since the package was initially shipped, we can submit a claim for a lost package and initiate the refund or replacement process.</p>"
+          }
+        },
+        "text_GPLDpG": {
+          "type": "text",
+          "settings": {
+            "title": "What is Kitty Hawk Kite's Shipping Policy?",
+            "content": "<p>Please see our detailed shipping policy <a href=\"https://store.kittyhawk.com/pages/shipping-policy\" title=\"https://store.kittyhawk.com/pages/shipping-policy\">here</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qCBkpp",
+        "text_ftNCPz",
+        "text_Hnn4Ti",
+        "text_YtjXrB",
+        "text_LnrfGD",
+        "text_GPLDpG"
+      ],
+      "settings": {
+        "title": "Orders + Shipping",
+        "title_align": "text-left",
+        "title_size": 7,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_8pBK8N": {
+      "type": "section-faq",
+      "blocks": {
+        "text_TDteme": {
+          "type": "text",
+          "settings": {
+            "title": "What is the Kitty Hawk Kites Return Policy?",
+            "content": "<p>Please find our <a href=\"https://store.kittyhawk.com/pages/return-policy\" title=\"Return Policy\">full return policy here</a>.</p>"
+          }
+        },
+        "text_UtXGng": {
+          "type": "text",
+          "settings": {
+            "title": "What if My Product is Defective?",
+            "content": "<p>We accept returns for any defective products. Please reach out to orders@kittyhawk.com with your order information and include a description and pictures of the defect. If there is a specific part that can be replaced we will do our best to get that part from the manufacturer if the customer would prefer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_TDteme",
+        "text_UtXGng"
+      ],
+      "settings": {
+        "title": "Returns",
+        "title_align": "text-left",
+        "title_size": 7,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_PYbDQX": {
+      "type": "section-faq",
+      "blocks": {
+        "text_Qpp9MD": {
+          "type": "text",
+          "settings": {
+            "title": "Does Kitty Hawk Kites Offer Kite Repairs?",
+            "content": "<p>Kitty Hawk Kites offers in-store kite repair at many of our <a href=\"https://www.kittyhawk.com/find-a-store/\" target=\"_blank\" title=\"https://www.kittyhawk.com/find-a-store/\">kite store locations</a></p><p>Please reach out to orders@kittyhawk.com with any specific repair questions and we will do our best to find a solution.</p>"
+          }
+        },
+        "text_hk8d4i": {
+          "type": "text",
+          "settings": {
+            "title": "Does Kitty Hawk Kites Sell Replacement Parts?",
+            "content": "<p>If there is a specific part you need, we recommend reaching out to the manufacturers directly.</p><p>Premier Kites: customercare@premierkites.com and include the item number, item name and description of what you need.</p><p>X-Kites & WindNSun Kites: Fill out the form found <a href=\"https://support.brainstormproducts.com/hc/en-us/articles/360056508411-How-can-I-get-replacement-parts\" target=\"_blank\" title=\"https://support.brainstormproducts.com/hc/en-us/articles/360056508411-How-can-I-get-replacement-parts\">here</a>.</p><p>Prism Kites: Find replacement parts <a href=\"https://prismkites.com/collections/replacement-parts\" target=\"_blank\" title=\"https://prismkites.com/collections/replacement-parts\">here</a>.</p><p>For other manufacturers please reach out to orders@kittyhawk.com for more information.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Qpp9MD",
+        "text_hk8d4i"
+      ],
+      "settings": {
+        "title": "Kite Repairs",
+        "title_align": "text-left",
+        "title_size": 7,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_ciHP4y": {
+      "type": "section-faq",
+      "blocks": {
+        "text_w3qRH7": {
+          "type": "text",
+          "settings": {
+            "title": "What Kites are Easiest to Fly?",
+            "content": "<p>We typically recommend single-line deltas, diamonds, and parafoils for beginners. </p><p>For more in-depth advice please check out our <a href=\"https://store.kittyhawk.com/blogs/recent-articles/the-best-kites-for-beginners\" title=\"https://store.kittyhawk.com/blogs/recent-articles/the-best-kites-for-beginners\">blog post</a> on this subject!</p>"
+          }
+        },
+        "text_GkQLky": {
+          "type": "text",
+          "settings": {
+            "title": "Do All Kites Come Ready to Fly?",
+            "content": "<p>No, not all kites come ready to fly.</p><p>Ready to fly means that your kite includes line and handles.</p><p>All products will say in the product description whether or not kite line is included with that kite. </p><p>If you have any questions or concerns about kite line please reach out to orders@kittyhawk.com</p>"
+          }
+        },
+        "text_FVgRq3": {
+          "type": "text",
+          "settings": {
+            "title": "What Kind of Line do I need?",
+            "content": "<p>Most all of our kites come with a small amount of basic line, but it's generally not very strong so if you are flying in higher winds or open areas like the beach, we recommend you pick up some spare line. Most kites under 6ft wingspan will be fine with 50lb, 500ft line like our <a href=\"https://store.kittyhawk.com/collections/kite-line/products/50-lb-x-300-foot-kite-line-stake-winder\">stake winders</a>. (Most kites only come with maybe 25lb test 150ft)</p><p><strong>Most all of our larger kites do not come with string</strong>. Kites 9ft to about 10ft are generally good on 90lb test like our <a href=\"https://store.kittyhawk.com/collections/kite-line/products/80lb-500-ft-kite-line-yo-yo-winder\" title=\"80lb kite line\">80lb by 500ft yoyo winder</a>. But keep in mind big kites pull so if you worry you can always increase the lb test of line used to 150lb.</p><p>Big kites over 10ft to about 15ft can be flown on <a href=\"https://store.kittyhawk.com/collections/kite-line/products/150-x-500-ft-line-on-yoyo-546-0007\" title=\"150lb kite line\">150lb by 500ft line</a>. These kites will pull a good deal so wear gloves and consider your windspeed as you can upgrade to 250lb test line for caution.</p><p>Big kites from about 16ft to 19ft should be flown with caution. These kites should be securely anchored before launching and at least <a href=\"https://store.kittyhawk.com/products/250lb-line-on-yoyo-146631\" title=\"250lb test line\">250lb test line</a> used.</p><p>Show Kites, Sleds and large ultrafoils are massive and should never be flown alone, should always be anchored before flying and gloves should be worn. Kites that are 19ft generally fly with <a href=\"https://store.kittyhawk.com/products/500-500-yo-yo-winder-115078\" title=\"500lb test kite line\">500lb test kite line</a> and kites bigger than that can use anywhere from 800lb to 1,500lb kite line</p>"
+          }
+        },
+        "text_rf9CFH": {
+          "type": "text",
+          "settings": {
+            "title": "How Windy Does it Need to Be?",
+            "content": "<p>Each kite is designed to excel in different wind conditions. Please check the product description for the correct wind range for your kite. Also check out our blog post on getting the best kite flying experience <a href=\"https://store.kittyhawk.com/blogs/recent-articles/how-to-improve-your-kite-flying-experience\" title=\"https://store.kittyhawk.com/blogs/recent-articles/how-to-improve-your-kite-flying-experience\">here</a>.</p>"
+          }
+        },
+        "text_EfPncz": {
+          "type": "text",
+          "settings": {
+            "title": "Where Can I Fly my Kite?",
+            "content": "<p>The best places to fly a kite are large open areas away from trees and power lines with plenty of space to avoid other people.</p><p>Check out our <a href=\"https://store.kittyhawk.com/blogs/recent-articles/professional-kite-flyers-guide-to-the-obx\" title=\"https://store.kittyhawk.com/blogs/recent-articles/professional-kite-flyers-guide-to-the-obx\">blog post</a> on best places to fly when your in the Outer Banks!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_w3qRH7",
+        "text_GkQLky",
+        "text_FVgRq3",
+        "text_rf9CFH",
+        "text_EfPncz"
+      ],
+      "settings": {
+        "title": "Product Questions",
+        "title_align": "text-left",
+        "title_size": 7,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_faq_FzHi3m": {
+      "type": "section-faq",
+      "blocks": {
+        "text_98jdx9": {
+          "type": "text",
+          "settings": {
+            "title": "Who is Kitty Hawk Kites?",
+            "content": "<p>Kitty Hawk Kites, Inc. was founded in 1974 by John Harris, a pioneer in hang gliding, to provide instruction, products, and service to the burgeoning new sport. In the late 1980s, Kitty Hawk Kites expanded into what is now it's two businesses; providing recreational adventures such as Hang Gliding, Kayaking, Kiteboarding, Jet Skiing, Parasailing and much, much more; selling kites (such as stunt kites, power kites and single line kites), toys, wind art, Life is Good, OBX apparel and gifts from it's retail stores and on our online store.</p>"
+          }
+        },
+        "text_JeGtVm": {
+          "type": "text",
+          "settings": {
+            "title": "Where can I find a Kitty Hawk Kites Store Near Me?",
+            "content": "<p>You can see all of our current retail locations <a href=\"https://www.kittyhawk.com/find-a-store/\" target=\"_blank\" title=\"https://www.kittyhawk.com/find-a-store/\">here</a>.</p>"
+          }
+        },
+        "text_zPngpJ": {
+          "type": "text",
+          "settings": {
+            "title": "Does Kitty Hawk Kites Do Charitable Donations?",
+            "content": "<p>For any donation requests please fill out our Donation Request Form, which can be found <a href=\"https://www.kittyhawk.com/donation-request/\" target=\"_blank\" title=\"https://www.kittyhawk.com/donation-request/\">here</a>.</p>"
+          }
+        },
+        "text_8PViMX": {
+          "type": "text",
+          "settings": {
+            "title": "What is Kitty Hawk Kite's Privacy Policy",
+            "content": "<p>Our complete privacy policy can be found <a href=\"https://store.kittyhawk.com/pages/privacy-policy\" target=\"_blank\" title=\"https://store.kittyhawk.com/pages/privacy-policy\">here</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_98jdx9",
+        "text_JeGtVm",
+        "text_zPngpJ",
+        "text_8PViMX"
+      ],
+      "settings": {
+        "title": "About Us",
+        "title_align": "text-left",
+        "title_size": 7,
+        "heading_size": 5,
+        "text_size": 5,
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "section_richtext_4Twgnf",
+    "faq",
+    "section_faq_UVfmwQ",
+    "section_faq_8pBK8N",
+    "section_faq_PYbDQX",
+    "section_faq_ciHP4y",
+    "section_faq_FzHi3m"
+  ]
+}

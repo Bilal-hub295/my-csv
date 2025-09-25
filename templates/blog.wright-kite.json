@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog",
+      "settings": {
+        "heading": "THE BLOG",
+        "show_heading": false,
+        "tag_label": "",
+        "tags": true,
+        "text_align": "text-left",
+        "post_grid": 3,
+        "rows": 3,
+        "wh_ratio": 1.7,
+        "show_author": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_preview": true,
+        "show_link": true,
+        "image": "shopify://shop_images/20170313_khkites_0395_Web-e1600289094988-1024x524.jpg",
+        "overlay_opacity": 30,
+        "overlay_color": "#000000",
+        "enable_overlay_text": true,
+        "image_height": "use_screen_one_half",
+        "text_color": "text--white",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_gallery_text_kFNRq3": {
+      "type": "section-gallery-text",
+      "blocks": {
+        "text_nrjfjQ": {
+          "type": "text",
+          "settings": {
+            "title": "Test",
+            "title_size": 1,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "body_size": 1,
+            "text_align": "text-left"
+          }
+        }
+      },
+      "block_order": [
+        "text_nrjfjQ"
+      ],
+      "name": "Gallery text",
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "grid_large": 1,
+        "grid_medium": 1,
+        "grid_mobile": 1,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_gallery_text_kFNRq3"
+  ]
+}

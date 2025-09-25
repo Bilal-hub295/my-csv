@@ -1,0 +1,108 @@
+<style>
+@media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top }}px;
+          padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+      }
+@media screen and (max-width: 767px){
+  .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top-mobile}}px;
+        padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+      }
+   .two-column-text-section .description{max-width: 100%;}
+  }
+  @media screen and (max-width: 400px){
+    .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top-mobile | times: 0.50 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom-mobile | times: 0.50 | round: 0 }}px;
+      }
+  }
+  .product-breadcrumb{display: flex; gap: 4px;}
+  .product-breadcrumb .breadcrumb-back,.product-breadcrumb .breadcrumb-home{flex-shrink: 0;}
+  .breadcrumb-back{font-weight: 500; padding-top: 5px; color: rgba(var(--color-foreground), 0.8)}
+  .breadcrumb-current,.breadcrumb-devider{padding-top: 5px;}
+  .breadcrumb-home{width: 32px; height: 32px; border-radius: 50%; background-color: #062F6D; display: flex; justify-content: center; align-items: center; margin-right: 4px;}
+</style>
+
+<section class="breadcrumb-sec color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <nav class="product-breadcrumb" role="navigation" aria-label="breadcrumbs">
+      <a href="{{ routes.root_url }}" class="breadcrumb-home">
+        {{ 'arrow-bread.svg' | inline_asset_content }}
+      </a>
+      <a href="{{ routes.all_products_collection_url }}" class="breadcrumb-back">
+        <span>{{ section.settings.back_label }}</span>
+      </a>
+      <span class="breadcrumb-devider">/</span>
+      <span class="breadcrumb-current">
+        {{ product.title }}
+      </span>
+    </nav>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Product Breadcrumb",
+  "settings": [
+    {
+      "type": "text",
+      "id": "back_label",
+      "label": "Back link label",
+      "default": "All Products"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Breadcrumb"
+    }
+  ]
+}
+{% endschema %}

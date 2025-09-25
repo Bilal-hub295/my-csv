@@ -1,0 +1,326 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": true,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_7ryKXE": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_3hkQhe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/aa1d10d1c32b0e6a7dfbcca573e8d6ca3252ef026e0b744cb01ef9c4ea572104_c988c261-01d0-41ba-b76f-dfe485d0d2c9_550x_1.webp",
+            "shape_class": "rounded-full",
+            "title": "Bestsellers",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/best-selling-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_RYnFRT": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6f26c55427add3c69d908174d654cb115de4683a6cd9f17e667e379167047722_550x_86298a57-4c91-4a72-a878-2e719dbc4342.webp",
+            "shape_class": "rounded-full",
+            "title": "Easy To Fly Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/easy-to-fly-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_rjAN6x": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/IMG_0591.webp",
+            "shape_class": "rounded-full",
+            "title": "High Skill Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/skill-demanding-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_VcRJbX": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/44916_2_1024x1024_20bc68df-ce8a-40ea-914c-a6726f312929.webp",
+            "shape_class": "rounded-full",
+            "title": "Kites for Kids",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/kites-for-kids",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_kgGaTL": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/kite-tails-and-line-laundry.jpg",
+            "shape_class": "rounded-full",
+            "title": "Kite Accessories",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/kite-accessories",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_NkacDq": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Pocket-Flyer-All-3-colors-in-sky_1800x1800_1.webp",
+            "shape_class": "rounded-full",
+            "title": "Single-Line Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/single-line-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_tmcUrD": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/149db1b526c3be815a5c12050687de2d6e445d13d3e24c87c438e7cdd09825c1_1100x_b730e356-893b-45a3-9730-d1c84d01acbc.webp",
+            "shape_class": "rounded-full",
+            "title": "Power Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/power-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_y66WE3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/b079fe225ad0a247068d0024f835b2517a3ae53340bcdfc5a1c31d735221c8a6.webp",
+            "shape_class": "rounded-full",
+            "title": "Specialty Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/specialty-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_aMCEtt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/GiantDragonKite-Green_2_550x_1fc8217c-71cc-4a8f-8414-6b77537c7594.webp",
+            "shape_class": "rounded-full",
+            "title": "Dragon Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/dragon-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_nzeAq8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/84b44b403703e1b78cec60caf8fd063868a0dcad5428feba4b7d123aa895fc6d_550x_2.webp",
+            "shape_class": "rounded-full",
+            "title": "Large Kites",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/large-kites",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_3hkQhe",
+        "text_block_RYnFRT",
+        "text_block_rjAN6x",
+        "text_block_VcRJbX",
+        "text_block_kgGaTL",
+        "text_block_NkacDq",
+        "text_block_tmcUrD",
+        "text_block_y66WE3",
+        "text_block_aMCEtt",
+        "text_block_nzeAq8"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 5,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "73836ce1-6257-4440-8f8a-bea7d073562b": {
+      "type": "section-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "collection": "best-selling-kites",
+        "grid": 4,
+        "rows": 1,
+        "grid_mobile": "2",
+        "bg": "palette--light bg--neutral",
+        "show_view_all": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        },
+        "515b6931-bae5-4830-b334-748c4a33f5b6": {
+          "type": "nav_links",
+          "settings": {
+            "collection_linklist": "kites"
+          }
+        }
+      },
+      "block_order": [
+        "filters",
+        "515b6931-bae5-4830-b334-748c4a33f5b6"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "de0038c9-9ea5-4bbf-950b-f70b43df077d": {
+      "type": "section-richtext",
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "section_columns_7ryKXE",
+    "73836ce1-6257-4440-8f8a-bea7d073562b",
+    "main",
+    "de0038c9-9ea5-4bbf-950b-f70b43df077d"
+  ]
+}

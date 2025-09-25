@@ -1,0 +1,232 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "collection-hero",
+      "settings": {
+        "text_align": "align--middle-center",
+        "show_title": true,
+        "show_title_below": false,
+        "show_description": true,
+        "show_description_below": false,
+        "color_bg": "palette--light bg--neutral",
+        "show_image": false,
+        "bg_position": "center-center",
+        "image_height": "use_screen_one_half",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "text_color": "text--white",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "width_text": "wrapper",
+        "padding_top_text": 36,
+        "padding_bottom_text": 0
+      }
+    },
+    "subcollections": {
+      "type": "collection-sub",
+      "settings": {
+        "subcollections": [],
+        "limit": 6,
+        "color_bg": "palette--light bg--neutral",
+        "text_color": "text--white",
+        "text_align": "align--middle-center",
+        "select_image": "collection",
+        "bg_position": "center-center",
+        "wh_ratio": 1.7,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "grid_mobile": 1.2,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "section_columns_yHgGWa": {
+      "type": "section-columns",
+      "blocks": {
+        "text_block_m9qVPi": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/f66ca29d7ea62df7045bc2be58df815de6951344a98d4cf4894118648df2d648_1100x_264aaad8-37d1-483f-b8a8-cf9ff01949cf.webp",
+            "shape_class": "rounded-full",
+            "title": "Games",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/games",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_dLLeGE": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/a3d43dcdddf3e62aa70ba278f42a85febf78a0376b99f16458d1cf79fcc3fb45_550x_c9a52d05-bfc8-4cd3-bc68-04a71c0470e0.webp",
+            "shape_class": "rounded-full",
+            "title": "Stuffed Animals",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/plush-toys",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_pcabWP": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/e72aff7a8859a05e788efbe5003ab5bbda717293b631a576ea316ad06d2ad050_1100x_932c4dee-adc6-4435-b0ea-ed28d14d0285.webp",
+            "shape_class": "rounded-full",
+            "title": "Toys",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/toys",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        },
+        "text_block_FwQn8F": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/10a577aa56251da2e4bc28518d108e666dbda90df7f277d72c34a85136aeb4fd_1100x_217053ac-f9c8-4558-b279-793e4f490bfe.webp",
+            "shape_class": "rounded-full",
+            "title": "Clearance",
+            "text": "",
+            "button_label": "",
+            "button_link": "shopify://collections/toys-on-sale",
+            "button_color": "btn--neutral",
+            "button_style": "btn--soft",
+            "enable_video": false,
+            "video_link": "",
+            "video_button_color": "text--white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_m9qVPi",
+        "text_block_dLLeGE",
+        "text_block_pcabWP",
+        "text_block_FwQn8F"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--neutral",
+        "align_text": "text-center",
+        "scale_image": true,
+        "wh_ratio": 1.7,
+        "grid_large": 4,
+        "grid_medium": 2,
+        "grid_mobile": 1.2,
+        "progress_bar_mobile": false,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_collection_slider_TyFNEC": {
+      "type": "section-collection-slider",
+      "settings": {
+        "collection": "thames-kosmos",
+        "product_limit": 12,
+        "title": "30% OFF THAMES & KOSMOS!",
+        "align_text": "title-center",
+        "progress_bar": "both",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_mobile": 1.2,
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "settings": {}
+        },
+        "5ea209cb-0b6a-44e2-914e-18a4f323e48c": {
+          "type": "nav_links",
+          "settings": {
+            "collection_linklist": ""
+          }
+        }
+      },
+      "block_order": [
+        "filters",
+        "5ea209cb-0b6a-44e2-914e-18a4f323e48c"
+      ],
+      "settings": {
+        "product_limit": 50,
+        "grid_large": 4,
+        "grid_mobile": "2",
+        "enable_layout_toggle": true,
+        "color_bg": "palette--light bg--neutral",
+        "collection_sorting": true,
+        "hide_sidebar": false,
+        "collapse_filters": true,
+        "show_products_count": true,
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 64
+      }
+    },
+    "section_richtext_HV4xFX": {
+      "type": "section-richtext",
+      "blocks": {
+        "text_P77EGA": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.longFormText | metafield_tag }}",
+            "text_size": 4,
+            "text_columns": 1
+          }
+        }
+      },
+      "block_order": [
+        "text_P77EGA"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "subcollections",
+    "section_columns_yHgGWa",
+    "section_collection_slider_TyFNEC",
+    "main",
+    "section_richtext_HV4xFX"
+  ]
+}

@@ -1,0 +1,504 @@
+<style>
+  .kitty-spec-slider.specs-and-feature-sec div:empty{display: block;}
+   .kitty-spec-slider.specs-and-feature-sec .spec-container{display: flex; gap: 109px;}
+    .kitty-spec-slider.specs-and-feature-sec .spec-row{display: flex; gap: 16px; align-items: flex-end;}
+    {% if section.settings.noslide %}
+    .kitty-spec-slider .kitty-specs-swiper{position: relative; padding-bottom: 200px;}
+    {% endif %}
+    .kitty-spec-slider .kitty-specs-swiper .swiper-slide {overflow: hidden;}
+    .kitty-spec-slider.specs-and-feature-sec h2{max-width: 542px; margin: 0 auto; text-align: center;}
+    .kitty-spec-slider.specs-and-feature-sec .detail_spec h2{margin: 0; text-align: inherit;}
+    .kitty-spec-slider.specs-and-feature-sec .spec-table{flex-grow: 1;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-button{font-size: 32px; line-height: 24px; margin-bottom: 20px;}
+    .kitty-spec-slider.specs-and-feature-sec .slider-arrows{display: flex; gap: 8px;}
+    .kitty-spec-slider.specs-and-feature-sec .arrows{width: 64px; height: 64px;}
+    .kitty-spec-slider.specs-and-feature-sec .arrows svg{height: 100%; width: 100%;}
+    .kitty-spec-slider.specs-and-feature-sec .arrows svg rect{fill-opacity: 1; fill: rgb(var(--color-foreground));}
+    .kitty-spec-slider.specs-and-feature-sec .swiper-button-disabled svg rect{fill-opacity: 1; fill: rgb(var(--color-foreground), 0.3);}
+    .kitty-spec-slider.specs-and-feature-sec .swiper-button-disabled svg path{fill: rgb(var(--color-foreground));}
+    .kitty-spec-slider.specs-and-feature-sec .arrows-box{position: absolute; bottom: 0; z-index: 3;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-button span{color: rgba(var(--color-foreground), 0.3);}
+    .kitty-spec-slider.specs-and-feature-sec .spec-feature,.kitty-spec-slider.specs-and-feature-sec .spec-detail{padding: 12px 10px; flex: 1 1 22%; border-bottom: 1px solid rgb(var(--color-foreground), 0.1)}
+    .kitty-spec-slider.specs-and-feature-sec .spc-heading{margin-bottom: 45px; padding: 12px 10px; flex: 1 1 22%; border-bottom: 1px solid rgb(var(--color-foreground)); background-color: rgb(var(--color-foreground),0.1);}
+    .kitty-spec-slider.specs-and-feature-sec .detail_spec .spc-heading,.kitty-spec-slider.specs-and-feature-sec .detail_spec .spec-feature, .kitty-spec-slider.specs-and-feature-sec .detail_spec .spec-detail{flex: 1 50%;}
+    .kitty-spec-slider.specs-and-feature-sec .spec-table{color: {{ section.settings.table-color }};}
+    .kitty-spec-slider.specs-and-feature-sec .spec-detail{opacity: 0.5;}
+    .kitty-spec-slider.specs-and-feature-sec .card-wrapper .card__heading {flex-grow: 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card__information .price {display: none !important;}
+    .kitty-spec-slider.specs-and-feature-sec .card--card {background-color: transparent;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-heading.featured-products { border-radius: 16px 16px 0 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card-wrapper.product-card-wrapper .card {padding: 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card--card .card__inner .card__media {border-radius: 16px;}
+    .kitty-spec-slider.specs-and-feature-sec .card-wrapper .card__heading {margin-bottom: 0;}
+    .kitty-spec-slider.specs-and-feature-sec .card:not(.ratio) {min-height: 384px;}
+    .kitty-spec-slider.specs-and-feature-sec .button {background-color:#062F6D; color: #fff;}
+    .kitty-spec-slider.specs-and-feature-sec .button:after {content: none !important;}
+    .kitty-spec-slider.specs-and-feature-sec .card-information {text-align: center;}
+    .kitty-spec-slider.specs-and-feature-sec .card__information {text-align: center;}
+    .kitty-spec-slider.specs-and-feature-sec .spc-button {display: flex; gap: 4px;}
+    .kitty-spec-slider.specs-and-feature-sec .card__heading {opacity:1 !important;}
+  @media screen and (min-width: 767px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+  .kitty-spec-slider.specs-and-feature-sec .spec-container{gap: 0; overflow-x: auto; padding-bottom: 38px;}
+  .kitty-spec-slider.specs-and-feature-sec .spc-heading:first-child, .kitty-spec-slider.specs-and-feature-sec .spec-feature{flex: 0 0 150px !important;}
+  .kitty-spec-slider.specs-and-feature-sec .spec-table {min-width: 950px; width: 100%;}
+  .kitty-spec-slider.specs-and-feature-sec .detail_spec .spec-table{min-width: 550px;}
+  .kitty-spec-slider.specs-and-feature-sec .detail_spec .spec-container{gap: 20px;}
+    }
+     @media screen and (max-width: 767px){
+            .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top-mobile}}px;
+            padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+          }
+          .kitty-spec-slider .spec-image{display: none;}
+          .kitty-spec-slider.specs-and-feature-sec .arrows-box{position: relative; margin-top: 40px; display: flex; justify-content: flex-end; align-items: center; flex-direction: row-reverse; gap: 15px;}
+          .kitty-spec-slider.specs-and-feature-sec .spc-button{font-size: 24px; margin-bottom: 0;}
+          .kitty-spec-slider.specs-and-feature-sec .arrows{height: 48px; width: 48px;}
+          .kitty-spec-slider.specs-and-feature-sec .spec-table .spec-feature{text-transform: uppercase;}
+          .kitty-spec-slider.specs-and-feature-sec .spec-row{gap: 16px;}
+          .kitty-spec-slider.specs-and-feature-sec .inner_span {flex-shrink: 0;}
+          .kitty-spec-slider .kitty-specs-swiper{padding-bottom: 0;}
+          
+        }
+</style>
+
+{%- unless section.settings.quick_add == 'none' -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+{%- if section.settings.quick_add == 'standard' -%}
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+<div class="kitty-spec-slider specs-and-feature-sec color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="kitty-specs-swiper swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'comparison_slide' %}
+              <div class="swiper-slide spec-slide">
+                <h2 style="padding-bottom: {{ block.settings.heading-padding-bottom }}px; {% if block.settings.center_text %}text-align: center;{% endif %}">
+                  {{ block.settings.heading | default: 'Specs & Details' }}
+                </h2>
+                <div class="spec-container">
+                  <div class="spec-table">
+                    <div class="spec-row">
+                      <h4 class="spc-heading">Feature/ Model</h4>
+                      <div class="spc-heading featured-products">
+                        {% render 'card-product',
+                          card_product: product,
+                          media_aspect_ratio: block.settings.image_ratio,
+                          image_shape: block.settings.image_shape,
+                          lazy_load: lazy_load,
+                          show_secondary_image: block.settings.show_secondary_image,
+                          show_vendor: block.settings.show_vendor,
+                          show_rating: true,
+                          skip_styles: skip_card_product_styles,
+                          section_id: section.id,
+                          quick_add: block.settings.quick_add
+                        %}
+                      </div>
+                      {% if product.metafields.custom.spec_products_list != blank %}
+                        {% for product_ref in product.metafields.custom.spec_products_list.value %}
+                          {% assign prod = product_ref %}
+                          <div class="spc-heading featured-products">
+                            {% render 'card-product',
+                              card_product: prod,
+                              media_aspect_ratio: block.settings.image_ratio,
+                              image_shape: block.settings.image_shape,
+                              lazy_load: lazy_load,
+                              show_secondary_image: block.settings.show_secondary_image,
+                              show_vendor: block.settings.show_vendor,
+                              show_rating: true,
+                              skip_styles: skip_card_product_styles,
+                              section_id: section.id,
+                              quick_add: block.settings.quick_add
+                            %}
+                          </div>
+                        {% endfor %}
+                      {% endif %}
+                    </div>
+                    <div class="spec-details">
+                      {% assign prod_list = product.metafields.custom.spec_products_list.value %}
+                      <div class="spec-row">
+                        <div class="spec-feature">Best For</div>
+                        <div class="spec-detail">{{ product.metafields.theme.best_for }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.theme.best_for }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Kite Type</div>
+                        <div class="spec-detail">{{ product.metafields.custom.kite_type }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.kite_type }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Wingspan</div>
+                        <div class="spec-detail">{{ product.metafields.custom.wingspan }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.wingspan }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Wind Range</div>
+                        <div class="spec-detail">{{ product.metafields.custom.wind_conditions }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.wind_conditions }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Skill Level</div>
+                        <div class="spec-detail">{{ product.metafields.custom.by_skill_level }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.by_skill_level }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Setup Time</div>
+                        <div class="spec-detail">{{ product.metafields.custom.setup_time }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.setup_time }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Line Included</div>
+                        <div class="spec-detail">{{ product.metafields.custom.line_included }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.line_included }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Stunt Control</div>
+                        <div class="spec-detail">{{ product.metafields.custom.stunt_control }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.stunt_control }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Portability</div>
+                        <div class="spec-detail">{{ product.metafields.custom.portability }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.portability }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Vibe</div>
+                        <div class="spec-detail">{{ product.metafields.custom.vibe }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.vibe }}</div>
+                        {% endfor %}
+                      </div>
+                      <div class="spec-row">
+                        <div class="spec-feature">Price Range</div>
+                        <div class="spec-detail">{{ product.metafields.custom.price_range }}</div>
+                        {% for prod in prod_list %}
+                          <div class="spec-detail">{{ prod.metafields.custom.price_range }}</div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% when 'detail_slide' %}
+              <div class="swiper-slide spec-slide detail_spec">
+                <div class="spec-container">
+                  <div class="spec-image">
+                    {% if product.metafields.custom.spec_feature_image %}
+                      <img
+                        src="{{ product.metafields.custom.spec_feature_image | image_url: width: 263 }}"
+                        alt="Specs image"
+                        class="custom-image"
+                        width="263"
+                        height="263"
+                      >
+                    {% endif %}
+                  </div>
+                  <div class="spec-table">
+                    <h2 style="padding-bottom: {{ block.settings.spec_heading-padding-bottom }}px; {% if block.settings.spec_center_text %}text-align: center;{% endif %}">
+                      {{ block.settings.spec_heading | default: 'Specs & Details' }}
+                    </h2>
+                    <div class="spec-row">
+                      <h4 class="spc-heading">Feature</h4>
+                      <h4 class="spc-heading">Detail</h4>
+                    </div>
+                    <div class="spec-details">
+                      {% if product.metafields.custom.wingspan != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Wingspan</div>
+                          <div class="spec-detail">{{ product.metafields.custom.wingspan }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.wind_conditions != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Wind Range</div>
+                          <div class="spec-detail">{{ product.metafields.custom.wind_conditions }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.recommended_flying_line != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Flying Line</div>
+                          <div class="spec-detail">{{ product.metafields.custom.recommended_flying_line }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.fabric != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Fabric</div>
+                          <div class="spec-detail">{{ product.metafields.custom.fabric }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.frame != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Frame</div>
+                          <div class="spec-detail">{{ product.metafields.custom.frame }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.bag_size != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Bag Size</div>
+                          <div class="spec-detail">{{ product.metafields.custom.bag_size }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.by_skill_level != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Skill Level</div>
+                          <div class="spec-detail">{{ product.metafields.custom.by_skill_level }}</div>
+                        </div>
+                      {% endif %}
+
+                      {% if product.metafields.custom.line_included != blank %}
+                        <div class="spec-row">
+                          <div class="spec-feature">Line Included</div>
+                          <div class="spec-detail">{{ product.metafields.custom.line_included }}</div>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      {% if section.settings.noslide %}
+      <div class="arrows-box">
+        <h4 class="spc-button">
+          <div class="inner_span">Next:</div>
+          <span class="next-slide-text">Specifications and details</span>
+        </h4>
+        <div class="slider-arrows">
+          <div class="spc-button-prev arrows">{{- 'icon-leftarrow.svg' | inline_asset_content -}}</div>
+          <div class="spc-button-next arrows">{{- 'icon-rightarrow.svg' | inline_asset_content -}}</div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if section.settings.noslide %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperEl = document.querySelector('.kitty-specs-swiper');
+    const innerSpan = document.querySelector('.inner_span');
+    const nextTextEl = document.querySelector('.next-slide-text');
+
+    if (swiperEl && !swiperEl.classList.contains('swiper-initialized')) {
+      const slideTitles = [
+        "Specifications and details",
+        "Comparison Table"
+      ];
+
+      const swiper = new Swiper(swiperEl, {
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: false,
+        allowTouchMove: false,
+        navigation: {
+          nextEl: '.spc-button-next',
+          prevEl: '.spc-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        on: {
+          slideChange: function () {
+            let activeIndex = this.activeIndex;
+
+            if (activeIndex === slideTitles.length - 1) {
+              if (innerSpan) innerSpan.textContent = "Back:";
+              if (nextTextEl) nextTextEl.textContent = slideTitles[activeIndex - 1];
+            } else {
+              if (innerSpan) innerSpan.textContent = "Next:";
+              if (nextTextEl) nextTextEl.textContent = slideTitles[activeIndex + 1];
+            }
+          }
+        }
+      });
+      if (innerSpan) innerSpan.textContent = "Next:";
+      if (nextTextEl) nextTextEl.textContent = slideTitles[1];
+    }
+  });
+</script>
+
+{% endif %}
+
+
+
+{% schema %}
+{
+  "name": "Specs Slider",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "table-color",
+      "label": "Table Color"
+    },
+    {
+      "type": "checkbox",
+      "id": "noslide",
+      "label": "Show Slide",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_slide",
+      "name": "Comparison Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Slide Heading",
+          "default": "Specs & Details"
+        },
+        {
+          "type": "range",
+          "id": "heading-padding-bottom",
+          "min": 0,
+          "max": 70,
+          "step": 7,
+          "label": "Heading PB",
+          "default": 35
+        },
+        {
+          "type": "select",
+          "id": "quick_add",
+          "default": "none",
+          "label": "t:sections.main-collection-product-grid.settings.quick_add.label",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_1"
+            },
+            {
+              "value": "standard",
+              "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_2"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "center_text",
+          "label": "Center Heading"
+        }
+      ]
+    },
+    {
+      "type": "detail_slide",
+      "name": "detail_slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "spec_heading",
+          "label": "Slide Heading",
+          "default": "Specs & Details"
+        },
+        {
+          "type": "range",
+          "id": "spec_heading-padding-bottom",
+          "min": 0,
+          "max": 70,
+          "step": 7,
+          "label": "Heading PB",
+          "default": 35
+        },
+        {
+          "type": "checkbox",
+          "id": "spec_center_text",
+          "label": "Center Heading"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 1,
+  "presets": [
+    {
+      "name": "Comparison Specs Slider",
+      "category": "Product",
+      "blocks": [{ "type": "comparison_slide" }, { "type": "detail_slide" }]
+    }
+  ]
+}
+{% endschema %}

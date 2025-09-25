@@ -1,0 +1,166 @@
+<style>
+  @media screen and (min-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .accordion-section .hb-row{display: flex; justify-content: space-between; gap: 20px;}
+  .accordion-section p{color: rgba(0, 0, 0, 0.60);}
+  .accordion-section .accordion-wrapper{
+    {% if section.settings.subheading != blank or section.settings.heading != blank or section.settings.text != blank %}
+         max-width: 635px; 
+    {% endif %}
+     flex-grow: 1;}
+  .accordion-section .accordion-header{max-width: 356px;}
+  @media screen and (max-width: 767px){
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top-mobile}}px;
+      padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+    }
+    .accordion-section .hb-row{flex-wrap: wrap-reverse; gap: 52px;}
+  }
+  @media screen and (max-width: 400px){
+.section-{{ section.id }}-padding {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    .accordion-section .hb-row{gap: 16px;}
+}
+</style>
+<section class="accordion-section color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="hb-row">
+      <div class="accordion-wrapper">
+        {% render 'accordions' %}
+      </div>
+      {% if section.settings.subheading != blank or section.settings.heading != blank or section.settings.text != blank %}
+      <div class="accordion-header">
+        {% if section.settings.subheading != blank %}
+          <p class="accordion-subheading">{{ section.settings.subheading }}</p>
+        {% endif %}
+        {% if section.settings.heading != blank %}
+          <h2 class="accordion-heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <p class="accordion-text">{{ section.settings.text }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "color-scheme1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme-noactive",
+      "label": "No active",
+      "default": "color-scheme1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme-active",
+      "label": "Active",
+      "default": "color-scheme1"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Paragraph"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 255,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 243,
+      "step": 3,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion",
+      "name": "Accordion Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Accordion Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Accordion Content"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Faq",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "accordion"
+        },
+        {
+          "type": "accordion"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

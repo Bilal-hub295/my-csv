@@ -1,0 +1,391 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+<style>
+  .video-slider .mobile-icon-row{display: flex; gap: 23px 64px; color: #08142D; font-size: 18px; padding-bottom: 54px; line-height: 1.2; flex-wrap: wrap;}
+    .video-slider .video-card *{border-radius: 0;}
+    .video-slider.page-width{max-width: 1300px;}
+     .video-slider .video-card .deferred-media__poster-button{border-radius: 50%;}
+  .video-slider .icon-box{height: 80px; width: 80px; background-color: #062F6D1A; padding: 20px; margin-bottom: 16px; border-radius: 50%;}
+  .video-slider .heading-title{padding-bottom: 64px;}
+  .video-slider .heading-title .h1{max-width: 413px;}
+  .video-slider .btn{font-size: 18px; margin-top: 25px; padding: 21.5px 39px; width: 331px;}
+  .video-slider .desktop-box{padding-top: 64px; text-align: center;}
+  .video-slider .desktop-box .mobile-icon-row{justify-content: center; padding-bottom: 39px;}
+  .video-slider .desktop-box .icon-box{margin: auto;}
+  
+
+  @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+      .video-slider .heading-title .btn-box,.video-slider .mobile-box{display: none;}
+      .video-slider .heading-title .h1{text-align: center;  margin: 0 auto;}
+      .video-slider .swiper-slide { flex: 0 0 calc(25% - 12px);}
+    }
+
+     .video-slider .swiper-wrapper {display: flex; gap: 16px;}
+     
+
+    @media screen and (max-width: 767px){
+.section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top-mobile}}px;
+      padding-bottom: {{ section.settings.padding_bottom-mobile}}px;
+    }
+       .video-slider .video-card{flex: 0 0 70%; margin-right: 0 !important; height: 505px; overflow: hidden;}
+       .video-slider .swiper-wrapper { flex-wrap: nowrap;}
+       .video-slider .pre-next-buttons{padding: 40px 0 0; justify-content: flex-end;}
+       .video-slider .video-section__media{height: 100%; padding-bottom: 0; --ratio-percent: 100%;}
+       .video-slider .heading-title{padding-bottom: 62px;}
+       .video-slider .desktop-box{display: none;}
+       .video-slider .icon-box{width: 40px; height: 40px; margin-left: auto; margin-right: auto; }
+       .icon-box-mobile {text-align: center;}
+     }
+     @media screen and (max-width: 439px){
+    .video-slider .heading-title .h1{font-size: 60px; max-width: 350px;}
+    }
+     @media screen and (max-width: 400px){
+    .section-{{ section.id }}-padding {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    }
+  }
+</style>
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="video-slider section-{{ section.id }}-padding page-width">
+    <div class="heading-title">
+      <h2 class="h1">{{ section.settings.heading }}</h2>
+      <div class="btn-box">
+        <a class="button btn" href="{{ section.settings.product_url }}">{{ section.settings.button_text }}</a>
+      </div>
+    </div>
+    <div class="mobile-box icon-mobile-box swiper">
+      <div class="mobile-icon-row swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'icon_box' %}
+            <div class="icon-box-mobile swiper-slide">
+              <div class="icon-box">
+                <img src="{{ block.settings.icon | img_url: '50x50' }}" height="40" width="40" alt="Icon">
+              </div>
+              <p>{{ block.settings.icon_text }}</p>
+              {% if block.settings.button_text != blank %}
+                <a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_text }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="video-swiperr-wrapper swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == 'video_slide' %}
+            {% liquid
+              assign video_id = block.settings.video.id | default: block.settings.video_url.id
+              assign video_alt = block.settings.video.alt | default: block.settings.description
+              assign alt = 'sections.video.load_video' | t: description: video_alt | escape
+              assign poster = block.settings.cover_image | default: block.settings.video.preview_image | default: block.settings.video_url.preview_image
+
+              if block.settings.video != null and poster != null
+                assign ratio_diff = block.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+                if ratio_diff < 0.01 and ratio_diff > 0
+                  assign fix_ratio = true
+                endif
+              endif
+            %}
+            <div class="video-card swiper-slide">
+              <deferred-media
+                class="video-section__media deferred-media gradient global-media-settings{% if fix_ratio %} media-fit-cover{% endif %}"
+                data-media-id="{{ video_id }}"
+                style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 | default: 56.25 }}%;"
+              >
+                <button
+                  id="Deferred-Poster-Modal-{{ video_id }}"
+                  class="video-section__poster media deferred-media__poster media--landscape"
+                  type="button"
+                  aria-label="{{ alt }}"
+                >
+                  {% if poster != null %}
+                    {{
+                      poster
+                      | image_url: width: 1920
+                      | image_tag: widths: '375, 750, 1100, 1500, 1780, 2000', alt: alt
+                    }}
+                  {% else %}
+                    {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                  {% endif %}
+                  <span class="deferred-media__poster-button motion-reduce">
+                    <span class="svg-wrapper">
+                      {{- 'icon-play.svg' | inline_asset_content -}}
+                    </span>
+                  </span>
+                </button>
+                <template>
+                  {% if block.settings.video == null and block.settings.video_url != null %}
+                    {% liquid
+                      assign loop = ''
+                      if block.settings.enable_video_looping
+                        assign loop = '&loop=1&playlist=' | append: video_id
+                      endif
+                    %}
+                    {% if block.settings.video_url.type == 'youtube' %}
+                      <iframe
+                        src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                        class="js-youtube"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ block.settings.description | escape }}"
+                      ></iframe>
+                    {% else %}
+                      <iframe
+                        src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+                        class="js-vimeo"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="{{ block.settings.description | escape }}"
+                      ></iframe>
+                    {% endif %}
+                  {% else %}
+                    {{
+                      block.settings.video
+                      | video_tag:
+                        image_size: '1100x',
+                        autoplay: true,
+                        loop: block.settings.enable_video_looping,
+                        controls: true,
+                        muted: false
+                    }}
+                  {% endif %}
+                </template>
+              </deferred-media>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="pre-next-buttons">
+        <div class="video-swiper-button-prev arrows">{{- 'icon-leftarrow.svg' | inline_asset_content -}}</div>
+        <div class="video-swiper-button-next arrows">{{- 'icon-rightarrow.svg' | inline_asset_content -}}</div>
+      </div>
+    </div>
+    <div class="desktop-box">
+      <div class="mobile-icon-row">
+        {% for block in section.blocks %}
+          {% if block.type == 'icon_box' %}
+            <div class="icon-box-mobile">
+              <div class="icon-box">
+                <img src="{{ block.settings.icon | img_url: '50x50' }}" height="100" width="100" alt="Icon">
+              </div>
+              <p>{{ block.settings.icon_text }}</p>
+              {% if block.settings.button_text != blank %}
+                <a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_text }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="btn-box">
+        <a class="button btn" href="{{ section.settings.product_url }}">{{ section.settings.button_text }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let videoSwiper = null;
+
+    function initvideoSwiper() {
+      if (window.innerWidth <= 767 && !videoSwiper) {
+        videoSwiper = new Swiper('.video-swiperr-wrapper', {
+          slidesPerView: 'auto', // allows custom width
+          centeredSlides: true, // keep active slide in center
+          spaceBetween: 20,
+          loop: true,
+          navigation: {
+            nextEl: '.video-swiper-button-next',
+            prevEl: '.video-swiper-button-prev',
+          },
+        });
+      } else if (window.innerWidth > 767 && videoSwiper) {
+        videoSwiper.destroy(true, true);
+        videoSwiper = null;
+      }
+    }
+
+    initvideoSwiper();
+    window.addEventListener('resize', initvideoSwiper);
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let kiteSwiper = null;
+
+    function initKiteSwiper() {
+      if (window.innerWidth <= 1199 && !kiteSwiper) {
+        kiteSwiper = new Swiper('.icon-mobile-box', {
+          loop: true,
+          speed: 5000,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1.6,
+              spaceBetween: 0,
+            },
+            500: {
+              slidesPerView: 3,
+              spaceBetween: 0,
+            },
+          },
+        });
+        document.querySelector('.icon-mobile-box .swiper-wrapper').style.transitionTimingFunction = 'linear';
+      } else if (window.innerWidth > 1199 && kiteSwiper) {
+        kiteSwiper.destroy(true, true);
+        kiteSwiper = null;
+      }
+    }
+
+    initKiteSwiper();
+    window.addEventListener('resize', initKiteSwiper);
+  });
+</script>
+{% schema %}
+{
+  "name": "Real People Reviews",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Our Customers Say"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Section Button Text",
+      "default": "View Product"
+    },
+    {
+      "type": "url",
+      "id": "product_url",
+      "label": "Section Button Link"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-top-mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding-bottom-mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_slide",
+      "name": "Video Slide",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Upload MP4 Video"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "label": "YouTube or Vimeo URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "Poster Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_video_looping",
+          "label": "Loop Video",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Video Description"
+        }
+      ]
+    },
+    {
+      "type": "icon_box",
+      "name": "Icon Box",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "icon_text",
+          "label": "Icon Text",
+          "default": "Happy Customers"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Real People Reviews",
+      "blocks": [{ "type": "video_slide" }, { "type": "icon_box" }]
+    }
+  ]
+}
+{% endschema %}

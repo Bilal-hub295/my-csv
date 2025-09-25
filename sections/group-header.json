@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announce_shipping": {
+          "type": "message",
+          "settings": {
+            "message": "Spend ||amount|| more for free shipping.",
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "announce_shipping"
+      ],
+      "custom_css": [
+        ".announcement__bar {background-color: red;}"
+      ],
+      "settings": {
+        "text_size": 3,
+        "layout": "slider",
+        "speed": 4,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "header_style": "menu_center",
+        "logo": "shopify://shop_images/khk-logo.png",
+        "logo_max_limit": 165,
+        "logo_padding": 15,
+        "logo_text_size": 5,
+        "main_menu_linklist": "2024-master-menu",
+        "mobile_menu_linklist": "",
+        "full_width": true,
+        "underline_current": false,
+        "enable_search": true,
+        "enable_account": true,
+        "use_icons": true,
+        "icons_type": "modern",
+        "cart_icon": "cart",
+        "header_sticky": "sticky",
+        "transparent_home": false,
+        "transparent_collection": false,
+        "transparent_blog": false,
+        "transparent_article": false,
+        "transparent_page": false,
+        "transparent_text_color": "#000000",
+        "show_collection_images": false,
+        "collection_wh_ratio": 0.5
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

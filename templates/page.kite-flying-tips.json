@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "kicker": "",
+        "show_title": true,
+        "show_content": true,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper"
+      }
+    },
+    "cf7191d8-c354-454a-a152-28160a39c8b0": {
+      "type": "section-blog",
+      "disabled": true,
+      "settings": {
+        "title": "News",
+        "homepage_blog": "",
+        "homepage_blog_count": 2,
+        "bg": "palette--light bg--neutral",
+        "color": "text--white",
+        "show_view_all": false,
+        "button_style": "btn--outline uppercase"
+      }
+    },
+    "ce45e602-3af6-4901-8601-0442d5b00f23": {
+      "type": "section-gallery",
+      "blocks": {
+        "template--15846226165929__ce45e602-3af6-4901-8601-0442d5b00f23-16857243815aa81993-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Dual-Line-Framed---Quantum-2.0-Graphite-Knockout_1800x1800Medium_089af02b-e44e-432f-b05c-e4e03e9bbab1.jpg",
+            "link": "https://store.kittyhawk.com/products/prism-nexus-2-0-graphite-tube-tail-bundle?_pos=9&_psq=kite%20bun&_ss=e&_v=1.0"
+          }
+        },
+        "template--15846226165929__ce45e602-3af6-4901-8601-0442d5b00f23-16857243815aa81993-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/prism-kites-zenith-5-product-ultraviolet-1_0af7f9d7-0e46-4f21-b45a-76a4fdee5057.jpg",
+            "link": "https://store.kittyhawk.com/collections/best-sellers/products/zenith-delta-kite?variant=32510428708949"
+          }
+        },
+        "template--15846226165929__ce45e602-3af6-4901-8601-0442d5b00f23-16857243815aa81993-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/prism-kites-nexus2-product-spectrum-3-scaled_550xMedium_63e9d6aa-5888-470d-ae2a-b0f3131d81ff.jpg",
+            "link": "https://store.kittyhawk.com/collections/kite-bundles/products/prism-nexus-2-0-spectrum-tube-tail-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "template--15846226165929__ce45e602-3af6-4901-8601-0442d5b00f23-16857243815aa81993-0",
+        "template--15846226165929__ce45e602-3af6-4901-8601-0442d5b00f23-16857243815aa81993-1",
+        "template--15846226165929__ce45e602-3af6-4901-8601-0442d5b00f23-16857243815aa81993-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "scale_image": true,
+        "bg": "palette--light bg--neutral"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cf7191d8-c354-454a-a152-28160a39c8b0",
+    "ce45e602-3af6-4901-8601-0442d5b00f23"
+  ]
+}
